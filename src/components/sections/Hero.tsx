@@ -221,7 +221,7 @@ useEffect(() => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
           // className="text-5xl sm:text-6xl md:text-7xl font-extrabold text-white leading-[1.07] tracking-tight mb-3"
-          className="text-[76px] font-[300] capitalize drop-shadow-[11px_10px_7.6px_rgba(0,0,0,0.35)]"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-[76px] font-[300] capitalize drop-shadow-[11px_10px_7.6px_rgba(0,0,0,0.35)]"
         >
           Intelligent Operations
         </motion.h1>
@@ -229,7 +229,7 @@ useEffect(() => {
           initial={{ opacity: 0, y: 44 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.38, ease: [0.22, 1, 0.36, 1] }}
-          className="text-[49px] leading-[1.07] tracking-tight mb-8 drop-shadow-[11px_10px_7.6px_rgba(0,0,0,0.25)]"
+          className="text-2xl sm:text-3xl md:text-[49px] leading-[1.07] tracking-tight mb-8 drop-shadow-[11px_10px_7.6px_rgba(0,0,0,0.25)]"
         >
           For Modern Government
         </motion.h1>
@@ -238,7 +238,7 @@ useEffect(() => {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.52 }}
-          className="text-[18px] tracking-tight mb-8 capitalize drop-shadow-[11px_10px_7.6px_rgba(0,0,0,0.25)]"
+          className="text-base md:text-[18px] tracking-tight mb-8 capitalize drop-shadow-[11px_10px_7.6px_rgba(0,0,0,0.25)]"
         >
           QuantumApps.AI is a trusted AI platform with intelligent agents built
           for Government Systems and Processes. Delivering domain expertise,

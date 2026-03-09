@@ -39,7 +39,7 @@ export default function WhatWeSolve() {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <div className="flex justify-between ">
+          <div className="flex flex-col sm:flex-row justify-between gap-6">
             <div>
               <h2 className="text-4xl md:text-7xl font-[300] text-white mb-5">
                 What We Solve
@@ -50,7 +50,9 @@ export default function WhatWeSolve() {
                 provides the solution.
               </p>
             </div>
-            <Challenge />
+            <div className="hidden sm:block shrink-0">
+              <Challenge />
+            </div>
           </div>
         </motion.div>
 
@@ -59,7 +61,7 @@ export default function WhatWeSolve() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-2xl font-[300] text-[34px] text-white mb-8 text-center"
+          className="text-2xl md:text-[34px] font-[300] text-white mb-8 text-center"
         >
           The Challenge
         </motion.h3>
@@ -79,12 +81,12 @@ export default function WhatWeSolve() {
               className="flex items-center bg-[#431396]/70 rounded-[80px_20px] overflow-hidden backdrop-blur-md shadow-[0_20px_60px_rgba(0,0,0,0.4)]"
             >
               {/* Icon Container */}
-              <div className="flex items-center justify-center w-[140px] h-[220px] rounded-[80px_20px] bg-[#7F25D1] shrink-0">
+              <div className="flex items-center justify-center w-[90px] sm:w-[140px] h-[160px] sm:h-[220px] rounded-[80px_20px] bg-[#7F25D1] shrink-0">
                 <Icon size={36} className="text-white" />
               </div>
 
               {/* Text */}
-              <p className="text-[#D8D8D8] leading-relaxed px-8 py-6 max-w-md">
+              <p className="text-[#D8D8D8] leading-relaxed px-4 sm:px-8 py-4 sm:py-6 text-sm sm:text-base max-w-md">
                 {description}
               </p>
             </motion.div>
@@ -99,11 +101,11 @@ export default function WhatWeSolve() {
         >
           <div className="text-right max-w-md">
             <motion.span
-              className="text-[#F8C557] !text-[36px] font-[300] text-xl block mb-2"
+              className="text-[#F8C557] text-2xl md:text-[36px] font-[300] block mb-2"
             >
               Result
             </motion.span>
-            <p className="text-sm leading-relaxed !text-[22px]">
+            <p className="text-sm md:text-[22px] leading-relaxed">
               Agencies stuck between outdated tools and overwhelming technical
               debt.
             </p>

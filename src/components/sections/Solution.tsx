@@ -26,7 +26,7 @@ export default function Solution() {
       />
 
       <div className="relative max-w-6xl mx-auto">
-        <div className="flex items-end gap-5 mb-12">
+        <div className="flex flex-col sm:flex-row items-start sm:items-end gap-5 mb-12">
           <motion.div
             initial={{ opacity: 0, scale: 0.5, rotate: -15 }}
             whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
@@ -46,7 +46,7 @@ export default function Solution() {
             <h2 className="text-3xl md:text-5xl font-medium text-white leading-tight">
               QuantumApps.AI
             </h2>
-            <h2 className="text-3xl font-[300] text-[34px] text-white leading-tight">
+            <h2 className="text-2xl md:text-[34px] font-[300] text-white leading-tight">
               Solution
             </h2>
           </motion.div>
@@ -69,13 +69,13 @@ export default function Solution() {
            >
 
              {/* Icon Container */}
-              <div className="flex items-center justify-center w-[140px] h-[220px] rounded-[80px_20px] bg-[#7F25D1] shrink-0">
+              <div className="flex items-center justify-center  sm:w-[140px] h-[160px] sm:h-[220px] rounded-[80px_20px] bg-[#7F25D1] shrink-0">
                 <Icon size={36} className="text-white" />
               </div>
-              <div className="px-8 py-6 max-w-md">
-                <h3 className="text-[#3D076C] !text-[22px] font-medium text-lg mb-3">{title}</h3>
+              <div className="px-4 sm:px-8 py-4 sm:py-6 max-w-md">
+                <h3 className="text-[#3D076C] text-lg md:text-[22px] font-medium mb-3">{title}</h3>
                 {/* Text */}
-                <p className="text-[#000000] leading-relaxed">
+                <p className="text-[#000000] text-sm sm:text-base leading-relaxed">
                   {description}
                 </p>
               </div>

@@ -41,7 +41,7 @@ export default function BuildFaster() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
-            <h2 className="text-4xl md:text-5xl mt-20 text-[#3D076C] leading-[1.1]">
+            <h2 className="text-3xl md:text-5xl mt-8 md:mt-20 text-[#3D076C] leading-[1.1]">
               We build{" "}
               <span className="font-medium">modern systems faster</span>,{" "}
               <span className="font-medium">smarter</span>, and{" "}
@@ -64,9 +64,9 @@ export default function BuildFaster() {
             <motion.div
               whileHover={{ scale: 1.02, y: -4 }}
               transition={{ type: "spring", stiffness: 250 }}
-              className="flex justify-center mx-auto"
+              className="flex justify-center mx-auto w-full max-w-[442px]"
             >
-              <ModernSystel width={442} />
+              <ModernSystel width="100%" />
             </motion.div>
             <p className="text-[#000000] text-right md:text-lg leading-relaxed">
               An innovative approach to building modern and scalable systems. We
@@ -77,20 +77,19 @@ export default function BuildFaster() {
 
         {/* Feature columns */}
         <div className="grid grid-cols-1 md:grid-cols-3">
-          {BUILD_FEATURES.map(({ Icon, title, description }, i) => (
+          {BUILD_FEATURES.map(({ title, description }, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.55, delay: i * 0.14 }}
-              // className="bg-[#691CC1] rounded-[80px_20px] p-8"
-              className={`${cardColors[i]} ${cardShapes[i]} p-16`}
+              className={`${cardColors[i]} ${cardShapes[i]} p-8 md:p-16`}
             >
               {i !== 2 && (
-                <h4 className="font-[300] text-[28px] mb-2 leading-snug">{title}</h4>
+                <h4 className="font-[300] text-xl md:text-[28px] mb-2 leading-snug">{title}</h4>
               )}
-              <p className="text-white text-[18px] leading-relaxed mt-3">
+              <p className="text-white text-base md:text-[18px] leading-relaxed mt-3">
                 {description}
               </p>
             </motion.div>

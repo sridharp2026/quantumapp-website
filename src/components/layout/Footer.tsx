@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Zap, Mail, Linkedin, Twitter } from 'lucide-react'
+import { Mail, Linkedin, X } from 'lucide-react'
 import { QuantumAppsLogo } from '../../../public/assets/svg'
 
 const PRODUCT_LINKS = [
@@ -42,7 +42,7 @@ export default function Footer() {
               {[
                 { Icon: Mail, href: 'mailto:hello@quantumapps.ai' },
                 { Icon: Linkedin, href: '#' },
-                { Icon: Twitter, href: '#' },
+                { Icon: X, href: '#' },
               ].map(({ Icon, href }, i) => (
                 <a
                   key={i}
@@ -57,7 +57,7 @@ export default function Footer() {
 
           {/* Product */}
           <div>
-            <h4 className="text-white font-semibold text-sm mb-5 tracking-wide">Product</h4>
+            <h4 className="text-white font-medium text-sm mb-5 tracking-wide">Product</h4>
             <ul className="space-y-3">
               {PRODUCT_LINKS.map((link) => (
                 <li key={link.label}>
@@ -71,7 +71,7 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="text-white font-semibold text-sm mb-5 tracking-wide">Company</h4>
+            <h4 className="text-white font-medium text-sm mb-5 tracking-wide">Company</h4>
             <ul className="space-y-3">
               {COMPANY_LINKS.map((link) => (
                 <li key={link.label}>
@@ -85,7 +85,7 @@ export default function Footer() {
 
           {/* Legal + CTA */}
           <div>
-            <h4 className="text-white font-semibold text-sm mb-5 tracking-wide">Legal</h4>
+            <h4 className="text-white font-medium text-sm mb-5 tracking-wide">Legal</h4>
             <ul className="space-y-3 mb-7">
               {LEGAL_LINKS.map((link) => (
                 <li key={link.label}>
@@ -97,7 +97,7 @@ export default function Footer() {
             </ul>
             <Link
               href="/contact"
-              className="inline-flex bg-[#F59E0B] hover:bg-[#D97706] text-white text-xs font-semibold px-4 py-2.5 rounded-full transition-colors"
+              className="bg-gradient-to-r from-yellow-400 to-orange-400 inline-flex text-black text-xs px-4 py-2.5 rounded-full hover:scale-105 transition transform shadow-lg"
             >
               Get Early Access
             </Link>

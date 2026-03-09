@@ -39,7 +39,7 @@ export default function Digitize() {
           viewport={{ once: true }}
           transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
           whileHover={{ scale: 1.015 }}
-          className="relative mb-14 mx-auto max-w-2xl"
+          className="relative mb-14 mx-auto max-w-2xl w-full"
         >
           <div className="rounded-[28px] p-[6px] bg-[linear-gradient(90deg,#7F25D1_-34.01%,#F5835F_47.71%,#FECF08_127.88%),linear-gradient(93deg,#FECF08_-19.92%,#F5835F_49.16%,#7F25D1_116.27%),linear-gradient(106deg,#E9B341_1.35%,#610CAD_102.79%)]">
             <div className="bg-[#2D0878] border border-purple-500 rounded-3xl overflow-hidden shadow-[0_30px_80px_rgba(120,50,220)] backdrop-blur-sm">
@@ -147,7 +147,7 @@ export default function Digitize() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="space-y-7"
         >
-          <p className="text-[#FAFAFA] text-[30px]">
+          <p className="text-[#FAFAFA] text-xl sm:text-[30px]">
             Experience <span className="font-medium text-[#FFC247]">QuantumApps.AI</span><br />in real
             government workflows.
           </p>

@@ -12,7 +12,7 @@ import {
   Navigation2,
 } from 'lucide-react'
 import type { NavLink, ChallengeItem, SolutionItem, FeatureItem, Particle } from '@/types'
-import { Data, Doller, Legancy, Timer } from '../../public/assets/svg'
+import { Cloude, CostEffective, Data, Doller, Intelliget, Intutive, Legancy, Timer } from '../../public/assets/svg'
 
 export const NAV_LINKS: NavLink[] = [
   { label: 'Home', href: '/' },
@@ -85,25 +85,25 @@ export const CHALLENGES: ChallengeItem[] = [
 
 export const SOLUTIONS: SolutionItem[] = [
   {
-    Icon: Lightbulb,
+    Icon: Intelliget,
     title: 'Intelligent Modernization',
     description:
       'Scalable platform that modernizes legacy applications end-to-end, including data layer migration that traditional agents cannot perform today.',
   },
   {
-    Icon: TruckIcon,
+    Icon: CostEffective,
     title: 'Cost-Effective Delivery',
     description:
       'Enables agencies to deploy and iterate on smaller budgets and real-time, without needing large engineering teams.',
   },
   {
-    Icon: Hand,
+    Icon: Intutive,
     title: 'Intuitive AI-Guided',
     description:
       'Guided flows that make the user navigate the platform and processes seamlessly without much training.',
   },
   {
-    Icon: Cloud,
+    Icon: Cloude,
     title: 'Cloud-Native Solutions',
     description:
       'Eliminate data silos and operate on secure, government-grade, pre-populated data, start and deliver high-quality results.',

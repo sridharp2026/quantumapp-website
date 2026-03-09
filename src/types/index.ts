@@ -17,7 +17,7 @@ export interface ChallengeItem {
 }
 
 export interface SolutionItem {
-  Icon: LucideIcon
+  Icon: LucideIcon | React.ComponentType<React.SVGProps<SVGSVGElement>>
   title: string
   description: string
 }
