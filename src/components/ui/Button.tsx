@@ -10,7 +10,7 @@ interface ButtonProps extends HTMLMotionProps<'button'> {
 
 const VARIANT_CLASSES: Record<Variant, string> = {
   orange:
-    'bg-[#F59E0B] hover:bg-[#D97706] text-white font-bold shadow-lg shadow-orange-600/30',
+    'bg-[#F59E0B] hover:bg-[#D97706] text-black font-[300] shadow-lg shadow-orange-600/30',
   'outline-orange':
     'border-2 border-[#F59E0B] text-[#F59E0B] hover:bg-[#F59E0B]/10',
   'outline-purple':
@@ -27,7 +27,7 @@ export default function Button({
     <motion.button
       whileHover={{ scale: 1.06 }}
       whileTap={{ scale: 0.95 }}
-      className={`btn-orange-glow shadow-none inline-flex items-center gap-2 justify-center font-semibold px-8 py-3.5 rounded-full text-sm transition-all duration-200 ${VARIANT_CLASSES[variant]} ${className}`}
+      className={`btn-orange-glow shadow-none inline-flex items-center gap-2 justify-center px-8 py-3.5 rounded-full transition-all duration-200 ${VARIANT_CLASSES[variant]} ${className}`}
       {...props}
     >
       {children}

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Zap, Mail, Linkedin, Twitter } from 'lucide-react'
+import { QuantumAppsLogo } from '../../../public/assets/svg'
 
 const PRODUCT_LINKS = [
   { label: 'Overview', href: '/product' },
@@ -24,18 +25,15 @@ const LEGAL_LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-purple-800/25 mt-0">
+    <footer className="border-t border-purple-800/25 bg-[#230256] mt-0">
       <div className="max-w-6xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-12">
           {/* Brand — spans 2 cols */}
-          <div className="md:col-span-2 space-y-5">
+          <div className="md:col-span-2 space-y-3">
             <Link href="/" className="inline-flex items-center gap-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-lg flex items-center justify-center shadow-lg shadow-orange-500/30">
-                <Zap size={17} className="text-white fill-white" strokeWidth={2.5} />
-              </div>
-              <span className="text-white font-bold text-xl tracking-tight">quantum</span>
+                          <QuantumAppsLogo width={106} />
             </Link>
-            <p className="text-purple-300/55 text-sm leading-relaxed max-w-xs">
+            <p className="text-white/85 text-sm leading-relaxed max-w-xs">
               Intelligent AI Agents built for government systems and processes. Trusted by agencies
               nationwide.
             </p>
@@ -63,7 +61,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {PRODUCT_LINKS.map((link) => (
                 <li key={link.label}>
-                  <Link href={link.href} className="text-purple-300/55 hover:text-white text-sm transition-colors">
+                  <Link href={link.href} className="text-white/85 hover:text-white text-sm transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -77,7 +75,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {COMPANY_LINKS.map((link) => (
                 <li key={link.label}>
-                  <Link href={link.href} className="text-purple-300/55 hover:text-white text-sm transition-colors">
+                  <Link href={link.href} className="text-white/85 hover:text-white text-sm transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -91,7 +89,7 @@ export default function Footer() {
             <ul className="space-y-3 mb-7">
               {LEGAL_LINKS.map((link) => (
                 <li key={link.label}>
-                  <Link href={link.href} className="text-purple-300/55 hover:text-white text-sm transition-colors">
+                  <Link href={link.href} className="text-white/85 hover:text-white text-sm transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -108,10 +106,10 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-purple-800/20 pt-8 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-purple-300/35 text-xs">
-            © {new Date().getFullYear()} QuantumApps.AI. All rights reserved.
+          <p className="text-white/65 text-xs">
+            &copy; {new Date().getFullYear()} QuantumApps.AI. All rights reserved.
           </p>
-          <p className="text-purple-300/35 text-xs">
+          <p className="text-white/65 text-xs">
             Built for Government. Trusted by Agencies.
           </p>
         </div>

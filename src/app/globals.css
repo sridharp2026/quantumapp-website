@@ -92,15 +92,27 @@ body {
 
 }
 
-.hero-bg {
+.hero-bg, .digitize-bg {
   background-image: url('/assets/hero-bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+.digitize-bg {
+  background-image: url('/assets/digitize-bg.png');
+}
+
 .what-we-solve {
   background: url('/assets/what-we-solve.png') transparent 0 / contain no-repeat;
+  background-blend-mode: lighten;
+}
+
+.solution-bg {
+  background-image: url('/assets/solution-bg.png'), url('/assets/solution-bottom-bg.png');
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  background-position: right top, center +250px; /* negative bottom offset */
   background-blend-mode: lighten;
 }
 

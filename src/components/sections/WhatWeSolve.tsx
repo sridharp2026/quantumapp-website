@@ -99,11 +99,11 @@ export default function WhatWeSolve() {
         >
           <div className="text-right max-w-md">
             <motion.span
-              className="text-[#F8C557] text-[36px] font-[300] text-xl block mb-2"
+              className="text-[#F8C557] !text-[36px] font-[300] text-xl block mb-2"
             >
               Result
             </motion.span>
-            <p className="text-sm leading-relaxed text-[22px]">
+            <p className="text-sm leading-relaxed !text-[22px]">
               Agencies stuck between outdated tools and overwhelming technical
               debt.
             </p>
