@@ -20,9 +20,7 @@ const fadeUp = {
 
 export default function WhatWeSolve() {
   return (
-    <section
-      className="what-we-solve relative py-24 px-6 overflow-hidden"
-    >
+    <section className="what-we-solve relative py-24 px-6 overflow-hidden">
       <div
         className="absolute -left-40 top-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full pointer-events-none"
         style={{
@@ -80,12 +78,9 @@ export default function WhatWeSolve() {
               whileHover={{ scale: 1.02 }}
               className="flex items-center bg-[#431396]/70 rounded-[80px_20px] overflow-hidden backdrop-blur-md shadow-[0_20px_60px_rgba(0,0,0,0.4)]"
             >
-              {/* Icon Container */}
               <div className="flex items-center justify-center w-[90px] sm:w-[140px] h-[160px] sm:h-[220px] rounded-[80px_20px] bg-[#7F25D1] shrink-0">
                 <Icon size={36} className="text-white" />
               </div>
-
-              {/* Text */}
               <p className="text-[#D8D8D8] leading-relaxed px-4 sm:px-8 py-4 sm:py-6 text-sm sm:text-base max-w-md">
                 {description}
               </p>
@@ -100,9 +95,7 @@ export default function WhatWeSolve() {
           className="flex justify-end"
         >
           <div className="text-right max-w-md">
-            <motion.span
-              className="text-[#F8C557] text-2xl md:text-[36px] font-[300] block mb-2"
-            >
+            <motion.span className="text-[#F8C557] text-2xl md:text-[36px] font-[300] block mb-2">
               Result
             </motion.span>
             <p className="text-sm md:text-[22px] leading-relaxed">

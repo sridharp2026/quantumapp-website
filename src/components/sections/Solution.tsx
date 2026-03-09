@@ -16,7 +16,7 @@ const fadeUp = {
 
 export default function Solution() {
   return (
-    <section className="solution-bg relative pt-16 px-6 overflow-hidden pb-[150px] bg-right">
+    <section className="solution-bg relative pt-16 px-6 overflow-hidden pb-[150px]">
       <div
         className="absolute -right-40 top-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full pointer-events-none"
         style={{
@@ -65,16 +65,12 @@ export default function Solution() {
               variants={fadeUp}
               whileHover={{ y: -6, boxShadow: '0 24px 50px rgba(109,40,217,0.25)' }}
               className="flex items-center bg-[linear-gradient(101deg,#FECF08_-0.28%,#F5835F_72.84%,#7F25D1_143.88%)] rounded-[80px_20px] overflow-hidden backdrop-blur-md shadow-[0_20px_60px_rgba(0,0,0,0.4)]"
-           
-           >
-
-             {/* Icon Container */}
-              <div className="flex items-center justify-center  sm:w-[140px] h-[160px] sm:h-[220px] rounded-[80px_20px] bg-[#7F25D1] shrink-0">
+            >
+              <div className="flex items-center justify-center w-[90px] sm:w-[140px] h-[160px] sm:h-[220px] rounded-[80px_20px] bg-[#7F25D1] shrink-0">
                 <Icon size={36} className="text-white" />
               </div>
               <div className="px-4 sm:px-8 py-4 sm:py-6 max-w-md">
                 <h3 className="text-[#3D076C] text-lg md:text-[22px] font-medium mb-3">{title}</h3>
-                {/* Text */}
                 <p className="text-[#000000] text-sm sm:text-base leading-relaxed">
                   {description}
                 </p>

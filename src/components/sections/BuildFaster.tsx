@@ -6,19 +6,13 @@ import { ModernSystel } from "../../../public/assets/svg";
 
 export default function BuildFaster() {
   const cardColors = ["bg-[#691CC1]", "bg-[#691CC1]", "bg-[#7F25D1]"];
-
-  const cardShapes = [
-    "rounded-[80px_20px]",
-    "rounded-[80px]",
-    "rounded-[80px_20px]",
-  ];
+  const cardShapes = ["rounded-[80px_20px]", "rounded-[80px]", "rounded-[80px_20px]"];
 
   return (
     <section className="relative overflow-hidden py-24 mt-[-100px] px-6">
-      {/* Orange parallelogram layer */}
       <div
-        className="absolute inset-0 bg-[linear-gradient(158deg,#FECF08_-22.06%,#F5835F_64.54%,#7F25D1_148.66%)] 
-    [clip-path:polygon(0_250px,0_100%,100%_calc(100%-250px),100%_0)]"
+        className="absolute inset-0 bg-[linear-gradient(158deg,#FECF08_-22.06%,#F5835F_64.54%,#7F25D1_148.66%)]
+        [clip-path:polygon(0_250px,0_100%,100%_calc(100%-250px),100%_0)]"
       />
       <motion.div
         animate={{ rotate: 360 }}
@@ -33,7 +27,6 @@ export default function BuildFaster() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,255,255,0.08)_0%,transparent_60%)] pointer-events-none" />
 
       <div className="relative z-10 max-w-6xl mx-auto">
-        {/* Two-column top */}
         <div className="grid grid-cols-1 md:grid-cols-[1fr_455px] gap-14 items-center mb-10">
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -54,11 +47,7 @@ export default function BuildFaster() {
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{
-              duration: 0.8,
-              delay: 0.15,
-              ease: [0.22, 1, 0.36, 1],
-            }}
+            transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
             className="space-y-6"
           >
             <motion.div
@@ -75,7 +64,6 @@ export default function BuildFaster() {
           </motion.div>
         </div>
 
-        {/* Feature columns */}
         <div className="grid grid-cols-1 md:grid-cols-3">
           {BUILD_FEATURES.map(({ title, description }, i) => (
             <motion.div
