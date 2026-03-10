@@ -92,15 +92,23 @@ body {
 
 }
 
-.hero-bg, .digitize-bg {
-  background-image: url('/assets/hero-bg.png');
+.hero-bg, .digitize-bg, .product-hero-bg{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+
+.hero-bg, .digitize-bg, .product-hero-bg {
+  background-image: url('/assets/hero-bg.png');
+}
+
 .digitize-bg {
   background-image: url('/assets/digitize-bg.png');
+}
+
+.product-hero-bg {
+  background-image: url('/assets/product-hero-bg.png');
 }
 
 .what-we-solve {

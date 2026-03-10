@@ -16,26 +16,8 @@ import { Cloude, CostEffective, Data, Doller, Intelliget, Intutive, Legancy, Tim
 
 export const NAV_LINKS: NavLink[] = [
   { label: 'Home', href: '/' },
-  {
-    label: 'Product',
-    href: '/product',
-    dropdown: [
-      { label: 'Overview', href: '/product' },
-      { label: 'Features', href: '/product/features' },
-      { label: 'Integrations', href: '/product/integrations' },
-      { label: 'Pricing', href: '/product/pricing' },
-    ],
-  },
-  {
-    label: 'About us',
-    href: '/about',
-    dropdown: [
-      { label: 'Our Story', href: '/about' },
-      { label: 'Team', href: '/about/team' },
-      { label: 'Careers', href: '/about/careers' },
-      { label: 'Press', href: '/about/press' },
-    ],
-  },
+  { label: 'About us', href: '/about' },
+  { label: 'Product', href: '/product' },
   { label: 'Contact', href: '/contact' },
 ]
 

@@ -145,9 +145,8 @@ export default function Digitize() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="space-y-7"
         >
-          <p className="text-[#FAFAFA] text-xl sm:text-[30px]">
+          <p className="text-[#FAFAFA] sm:text-[30px] mb-5">
             Experience <span className="font-medium text-[#FFC247]">QuantumApps.AI</span><br />in real
             government workflows.
           </p>

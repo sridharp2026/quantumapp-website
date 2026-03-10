@@ -4,14 +4,13 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, Zap, Menu, X, ArrowRight } from "lucide-react";
+import { Menu, X, ArrowRight } from "lucide-react";
 import { NAV_LINKS } from "@/lib/data";
 import { QuantumAppsLogo } from "../../../public/assets/svg";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -51,65 +50,18 @@ export default function Navbar() {
             const isActive =
               pathname === link.href || pathname.startsWith(link.href + "/");
             return (
-              <div
-                key={link.label}
-                className="relative"
-                onMouseEnter={() =>
-                  link.dropdown && setActiveDropdown(link.label)
-                }
-                onMouseLeave={() => setActiveDropdown(null)}
-              >
-                <motion.div whileHover={{ y: -1 }}>
-                  <Link
-                    href={link.href}
-                    className={`flex items-center gap-1 transition-colors duration-200 ${
-                      isActive
-                        ? "text-[#E9B341]"
-                        : "text-white hover:text-[#E9B341]"
-                    }`}
-                  >
-                    {link.label}
-                    {link.dropdown && (
-                      <motion.span
-                        animate={{
-                          rotate: activeDropdown === link.label ? 180 : 0,
-                        }}
-                        transition={{ duration: 0.2 }}
-                      >
-                        <ChevronDown size={13} />
-                      </motion.span>
-                    )}
-                  </Link>
-                </motion.div>
-
-                <AnimatePresence>
-                  {link.dropdown && activeDropdown === link.label && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 6, scale: 0.97 }}
-                      animate={{ opacity: 1, y: 0, scale: 1 }}
-                      exit={{ opacity: 0, y: 6, scale: 0.97 }}
-                      transition={{ duration: 0.18 }}
-                      className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-48 bg-[#2D0878]/90 backdrop-blur-xl border border-purple-500/30 rounded-2xl shadow-2xl shadow-purple-900/50 overflow-hidden"
-                    >
-                      <div className="p-1.5">
-                        {link.dropdown.map((item) => (
-                          <Link
-                            key={item.label}
-                            href={item.href}
-                            className={`block px-3.5 py-2 text-sm rounded-xl transition-colors ${
-                              pathname === item.href
-                                ? "text-[#E9B341] bg-purple-900/50"
-                                : "text-white hover:text-[#E9B341] hover:bg-purple-900/40"
-                            }`}
-                          >
-                            {item.label}
-                          </Link>
-                        ))}
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
+              <motion.div key={link.label} whileHover={{ y: -1 }}>
+                <Link
+                  href={link.href}
+                  className={`transition-colors duration-200 ${
+                    isActive
+                      ? "text-[#E9B341]"
+                      : "text-white hover:text-[#E9B341]"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              </motion.div>
             );
           })}
 
@@ -166,26 +118,10 @@ export default function Navbar() {
                 >
                   <Link
                     href={link.href}
-                    className="flex items-center justify-between py-3 text-white hover:text-[#E9B341] text-xl border-b border-purple-900/20 transition-colors"
+                    className="block py-3 text-white hover:text-[#E9B341] text-xl border-b border-purple-900/20 transition-colors"
                   >
                     {link.label}
-                    {link.dropdown && (
-                      <ChevronDown size={14} className="opacity-50" />
-                    )}
                   </Link>
-                  {link.dropdown && (
-                    <div className="pl-3 pb-2 space-y-1">
-                      {link.dropdown.map((item) => (
-                        <Link
-                          key={item.label}
-                          href={item.href}
-                          className="block py-1.5 text-xs text-white/70 hover:text-[#E9B341] transition-colors"
-                        >
-                          {item.label}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
                 </motion.div>
               ))}
               <div className="pt-3">
