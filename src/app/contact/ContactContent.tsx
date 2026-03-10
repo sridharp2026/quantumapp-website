@@ -30,9 +30,19 @@ export default function ContactContent() {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     setLoading(true)
-    await new Promise(r => setTimeout(r, 1200))
-    setLoading(false)
-    setSubmitted(true)
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      })
+      if (!res.ok) throw new Error('Failed to send')
+      setSubmitted(true)
+    } catch {
+      alert('Something went wrong. Please try again or email us directly.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   const inputClass = 'w-full bg-[#1a0045]/60 border border-purple-500/30 rounded-xl px-4 py-3 text-white placeholder:text-purple-300/35 text-sm focus:outline-none focus:border-purple-400/70 focus:bg-[#2D0878]/40 transition-all'

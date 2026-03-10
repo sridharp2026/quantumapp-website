@@ -12,7 +12,8 @@ export default function BuildFaster() {
     <section className="relative overflow-hidden py-24 mt-[-100px] px-6">
       <div
         className="absolute inset-0 bg-[linear-gradient(158deg,#FECF08_-22.06%,#F5835F_64.54%,#7F25D1_148.66%)]
-        [clip-path:polygon(0_250px,0_100%,100%_calc(100%-250px),100%_0)]"
+        [clip-path:polygon(0_115px,0_100%,100%_calc(100%-250px),100%_0)]
+min-[1000px]:[clip-path:polygon(0_250px,0_100%,100%_calc(100%-250px),100%_0)]"
       />
       <motion.div
         animate={{ rotate: 360 }}

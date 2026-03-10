@@ -64,9 +64,9 @@ export default function Solution() {
               key={i}
               variants={fadeUp}
               whileHover={{ y: -6, boxShadow: '0 24px 50px rgba(109,40,217,0.25)' }}
-              className="flex items-center bg-[linear-gradient(101deg,#FECF08_-0.28%,#F5835F_72.84%,#7F25D1_143.88%)] rounded-[80px_20px] overflow-hidden backdrop-blur-md shadow-[0_20px_60px_rgba(0,0,0,0.4)]"
+              className="flex items-stretch items-center bg-[linear-gradient(101deg,#FECF08_-0.28%,#F5835F_72.84%,#7F25D1_143.88%)] rounded-[80px_20px] overflow-hidden backdrop-blur-md shadow-[0_20px_60px_rgba(0,0,0,0.4)]"
             >
-              <div className="flex items-center justify-center w-[90px] sm:w-[140px] h-[160px] sm:h-[220px] rounded-[80px_20px] bg-[#7F25D1] shrink-0">
+              <div className="flex items-center justify-center w-[115px] min-h-[160px] rounded-[80px_20px] bg-[#7F25D1] shrink-0">
                 <Icon size={36} className="text-white" />
               </div>
               <div className="px-4 sm:px-8 py-4 sm:py-6 max-w-md">

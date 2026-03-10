@@ -78,7 +78,7 @@ export default function WhatWeSolve() {
               whileHover={{ scale: 1.02 }}
               className="flex items-center bg-[#431396]/70 rounded-[80px_20px] overflow-hidden backdrop-blur-md shadow-[0_20px_60px_rgba(0,0,0,0.4)]"
             >
-              <div className="flex items-center justify-center w-[90px] sm:w-[140px] h-[160px] sm:h-[220px] rounded-[80px_20px] bg-[#7F25D1] shrink-0">
+              <div className="flex items-center justify-center w-[115px] min-h-[160px] rounded-[80px_20px] bg-[#7F25D1] shrink-0">
                 <Icon size={36} className="text-white" />
               </div>
               <p className="text-[#D8D8D8] leading-relaxed px-4 sm:px-8 py-4 sm:py-6 text-sm sm:text-base max-w-md">
