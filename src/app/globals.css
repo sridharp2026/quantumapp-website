@@ -124,6 +124,22 @@ body {
   background-blend-mode: lighten;
 }
 
+.about-impact-bg {
+  background-image: url('/assets/solution-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right top; /* negative bottom offset */
+  background-blend-mode: lighten;
+}
+
+.about-value-bg {
+  background-image: url('/assets/solution-bottom-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center +50px; /* negative bottom offset */
+  background-blend-mode: lighten;
+}
+
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: #230256; }
 ::-webkit-scrollbar-thumb { background: #7F25D1; border-radius: 4px; }

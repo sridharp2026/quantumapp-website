@@ -100,239 +100,11 @@ const dashStats = [
   ],
 ];
 
-// GovAI Logo SVG
-function GovAILogo() {
-  return (
-    <span className="inline-flex items-center gap-1.5 bg-white/10 border border-white/20 rounded-lg px-3 py-1.5">
-      <span className="text-white font-black text-base tracking-tight leading-none">
-        <span className="text-[#F59E0B]">Gov</span>
-        <span className="text-white">AI</span>
-      </span>
-    </span>
-  );
-}
-
-// Illustration: Person at clipboard (Hero right side)
-function HeroIllustration() {
-  return (
-    <svg viewBox="0 0 220 240" className="w-full h-full" aria-hidden>
-      {/* clipboard body */}
-      <rect
-        x="55"
-        y="30"
-        width="120"
-        height="155"
-        rx="10"
-        fill="#7C3AED"
-        opacity="0.7"
-      />
-      <rect
-        x="65"
-        y="50"
-        width="100"
-        height="120"
-        rx="4"
-        fill="#A78BFA"
-        opacity="0.5"
-      />
-      {/* clip at top */}
-      <rect x="85" y="22" width="50" height="20" rx="6" fill="#F59E0B" />
-      {/* lines on clipboard */}
-      {[0, 1, 2, 3, 4].map((i) => (
-        <rect
-          key={i}
-          x="72"
-          y={60 + i * 18}
-          width={i % 2 === 0 ? 86 : 60}
-          height="6"
-          rx="3"
-          fill="#C4B5FD"
-          opacity="0.6"
-        />
-      ))}
-      {/* Robot arm */}
-      <line
-        x1="175"
-        y1="90"
-        x2="155"
-        y2="110"
-        stroke="#F59E0B"
-        strokeWidth="5"
-        strokeLinecap="round"
-      />
-      <circle cx="180" cy="85" r="12" fill="#F59E0B" opacity="0.9" />
-      <circle cx="180" cy="85" r="6" fill="#1a0045" />
-      {/* Person silhouette */}
-      <circle cx="42" cy="130" r="18" fill="#5B21B6" opacity="0.9" />
-      <ellipse cx="42" cy="185" rx="22" ry="35" fill="#5B21B6" opacity="0.8" />
-      {/* Person arm holding */}
-      <line
-        x1="60"
-        y1="155"
-        x2="90"
-        y2="130"
-        stroke="#7C3AED"
-        strokeWidth="6"
-        strokeLinecap="round"
-      />
-      {/* Sparkle dots */}
-      <circle cx="195" cy="40" r="4" fill="#F59E0B" opacity="0.7" />
-      <circle cx="30" cy="60" r="3" fill="#A78BFA" opacity="0.6" />
-      <circle cx="200" cy="160" r="3" fill="#A78BFA" opacity="0.5" />
-    </svg>
-  );
-}
-
-// Illustration: Calendar with person
-function CalendarIllustration() {
-  return (
-    <svg viewBox="0 0 180 160" className="w-full h-full" aria-hidden>
-      <rect
-        x="20"
-        y="25"
-        width="130"
-        height="110"
-        rx="10"
-        fill="#7C3AED"
-        opacity="0.7"
-      />
-      <rect
-        x="20"
-        y="25"
-        width="130"
-        height="28"
-        rx="10"
-        fill="#F59E0B"
-        opacity="0.85"
-      />
-      <rect
-        x="20"
-        y="38"
-        width="130"
-        height="15"
-        rx="0"
-        fill="#F59E0B"
-        opacity="0.85"
-      />
-      {[0, 1, 2].map((row) =>
-        [0, 1, 2, 3].map((col) => (
-          <rect
-            key={`${row}-${col}`}
-            x={30 + col * 28}
-            y={65 + row * 22}
-            width="20"
-            height="14"
-            rx="3"
-            fill="#A78BFA"
-            opacity="0.5"
-          />
-        )),
-      )}
-      {/* Highlight cell */}
-      <rect
-        x="86"
-        y="87"
-        width="20"
-        height="14"
-        rx="3"
-        fill="#F59E0B"
-        opacity="0.85"
-      />
-      {/* Person */}
-      <circle cx="158" cy="70" r="14" fill="#5B21B6" opacity="0.9" />
-      <ellipse cx="158" cy="115" rx="18" ry="28" fill="#5B21B6" opacity="0.8" />
-    </svg>
-  );
-}
-
-// Illustration: Impact graphic
-function ImpactIllustration() {
-  return (
-    <svg viewBox="0 0 180 160" className="w-full h-full" aria-hidden>
-      {/* Grid/table background */}
-      <rect
-        x="20"
-        y="20"
-        width="130"
-        height="105"
-        rx="8"
-        fill="#5B21B6"
-        opacity="0.5"
-      />
-      {[0, 1, 2, 3].map((i) => (
-        <rect
-          key={i}
-          x="20"
-          y={20 + i * 26}
-          width="130"
-          height="1"
-          fill="#A78BFA"
-          opacity="0.3"
-        />
-      ))}
-      {[0, 1, 2].map((i) => (
-        <rect
-          key={i}
-          x={50 + i * 35}
-          y="20"
-          width="1"
-          height="105"
-          fill="#A78BFA"
-          opacity="0.3"
-        />
-      ))}
-      {/* Colored cells */}
-      <rect
-        x="22"
-        y="22"
-        width="27"
-        height="23"
-        rx="2"
-        fill="#F59E0B"
-        opacity="0.7"
-      />
-      <rect
-        x="57"
-        y="48"
-        width="27"
-        height="23"
-        rx="2"
-        fill="#7C3AED"
-        opacity="0.7"
-      />
-      <rect
-        x="92"
-        y="74"
-        width="27"
-        height="23"
-        rx="2"
-        fill="#F59E0B"
-        opacity="0.7"
-      />
-      {/* Person */}
-      <circle cx="158" cy="50" r="14" fill="#F59E0B" opacity="0.9" />
-      <ellipse cx="158" cy="100" rx="18" ry="30" fill="#F59E0B" opacity="0.7" />
-    </svg>
-  );
-}
-
 export default function ProductContent() {
   return (
     <main className="overflow-hidden">
       {/* ── Hero ── */}
       <section className="product-hero-bg flex items-center min-h-screen relative pt-24 pb-16 px-6 overflow-hidden">
-        {/* background glow */}
-        <div className="pointer-events-none absolute inset-0">
-          <div
-            className="absolute top-0 left-0 w-[600px] h-[600px] rounded-full opacity-30"
-            style={{
-              background:
-                "radial-gradient(circle, rgba(120,50,240,0.6) 0%, transparent 70%)",
-              filter: "blur(80px)",
-            }}
-          />
-        </div>
-
         <div className="max-w-6xl mx-auto relative">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Left text */}
@@ -394,7 +166,7 @@ export default function ProductContent() {
       </section>
 
       {/* ── Features ── */}
-      <section className="py-16 px-6">
+      <section className="what-we-solve py-16 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-row-1 gap-12 items-start">
             {/* Left: calendar illustration */}
@@ -446,7 +218,7 @@ export default function ProductContent() {
       </section>
 
       {/* ── Impact ── */}
-      <section className="py-16 px-6">
+      <section className="about-impact-bg py-16 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-row-1 gap-12">
             {/* Left: text + cards */}
