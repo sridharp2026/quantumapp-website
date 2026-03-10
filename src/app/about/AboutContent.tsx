@@ -454,7 +454,7 @@ export default function AboutContent() {
         <div
           className="absolute inset-0 bg-[linear-gradient(158deg,#FECF08_-22.06%,#F5835F_64.54%,#7F25D1_148.66%)]
           [clip-path:polygon(0_115px,0_100%,100%_calc(100%-250px),100%_0)]
-  min-[1000px]:[clip-path:polygon(0_250px,0_100%,100%_calc(100%-250px),100%_0)]"
+  min-[1000px]:[clip-path:polygon(0_150px,0_100%,100%_calc(100%-150px),100%_0)]"
         />
         <motion.div
           animate={{ rotate: 360 }}
@@ -466,17 +466,19 @@ export default function AboutContent() {
           transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
           className="absolute -bottom-24 -left-24 w-72 h-72 rounded-full border border-white/10 pointer-events-none"
         />
-        <div className="max-w-6xl mx-auto relative mt-[180px]">
+        <div className="max-w-6xl mx-auto relative mt-[80px]">
+          <div>
+            <h2 className="text-4xl md:text-5xl font-medium text-[#3D0470] mb-3">
+              Get in Touch
+            </h2>
+            <p className="text-black font-[300] text-base max-w-xl mr-auto">
+              Whether you’re a developer with a question, a potential invester,
+              or a future partner. we’d love to hear from you
+            </p>
+          </div>
           {/* Section header */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
             <div className="grid grid-cols-1 lg:grid-cols-1 items-center">
-              <h2 className="text-4xl md:text-5xl font-medium text-[#3D0470] mb-3">
-                Get in Touch
-              </h2>
-              <p className="text-black text-base max-w-xl mx-auto">
-                Whether you’re a developer with a question, a potential
-                invester, or a future partner. we’d love to hear from you
-              </p>
               {/* Form */}
               <motion.div
                 initial={{ opacity: 0, x: -24 }}
@@ -551,7 +553,7 @@ export default function AboutContent() {
                       disabled={loading}
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.97 }}
-                      className="w-full flex items-center justify-center gap-2 bg-[#1a0045] hover:bg-[#2D0878] disabled:opacity-60 text-white font-bold py-3.5 rounded-full text-sm transition-colors shadow-xl"
+                  className="w-full flex items-center justify-center gap-2 bg-[#F59E0B] hover:bg-[#D97706] text-black font-[300] px-6 py-3 rounded-full text-md transition-colors shadow-lg shadow-orange-900/30"
                     >
                       {loading ? (
                         <span className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" />
@@ -575,58 +577,57 @@ export default function AboutContent() {
                 delay: 0.1,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="bg-[#1a0045]/85 backdrop-blur-sm border border-white/10 rounded-3xl p-8 text-white"
+              className=""
             >
-              <h3 className="text-xl font-extrabold mb-6">Get in Touch</h3>
-              <div className="space-y-5">
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#F59E0B]/20 border border-[#F59E0B]/40 flex items-center justify-center flex-shrink-0">
-                    <Mail size={17} className="text-[#F59E0B]" />
-                  </div>
+              <h3 className="text-[32px] font-[300] text-[#280646]">
+                Other Ways to connect
+              </h3>
+              <p className="text-[#280646] mb-6">
+                Prefer different method ? Reach out to us directly or follow our
+                journey on social media.
+              </p>
+              <div className="space-y-5 mb-10">
+                <div className="flex items-center w-[350px] gap-4 pl-6 bg-[#431396] rounded-[50px] p-2">
+                  <Mail size={17} className="text-[#F59E0B]" />
                   <div>
-                    <p className="text-[white/50] text-xs font-medium">Email</p>
+                    <p className="text-[#F6D388]">Email</p>
                     <a
                       href="mailto:hello@quantumapps.ai"
-                      className="text-white text-sm font-semibold hover:text-[#F59E0B] transition-colors"
+                      className="text-[#F6D388] font-medium hover:text-[#F59E0B] transition-colors"
                     >
-                      hello@quantumapps.ai
+                      hello@quantumapps.com
                     </a>
                   </div>
                 </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#F59E0B]/20 border border-[#F59E0B]/40 flex items-center justify-center flex-shrink-0">
-                    <Phone size={17} className="text-[#F59E0B]" />
-                  </div>
+                <div className="inline-flex items-center min-w-[350px] gap-4 px-6 bg-[#431396] rounded-[50px] p-2">
+                  <Phone size={17} className="text-[#F59E0B]" />
                   <div>
-                    <p className="text-white/50 text-xs font-medium">Phone</p>
+                    <p className="text-[#F6D388]">Follow on Linkedin</p>
                     <a
-                      href="tel:+12025550147"
-                      className="text-white text-sm font-semibold hover:text-[#F59E0B] transition-colors"
+                      href="#"
+                      className="text-[#F6D388] font-medium hover:text-[#F59E0B] transition-colors"
                     >
-                      +1 (202) 555-0147
+                      /quantumapps.ai
                     </a>
                   </div>
                 </div>
-              </div>
-
-              <div className="mt-8 pt-6 border-t border-white/10">
-                <p className="text-white/60 text-sm mb-4 leading-relaxed">
-                  Want to see the platform in action? Schedule a personalized
-                  30-minute demo tailored to your agency.
-                </p>
+                <div className="w-[350px] bg-gradient-to-l from-red-400/50 via-red-400/50 to-yellow-400/50 rounded-[20px] p-6 shadow-lg shadow-orange-900/30">
+                  <h3 className="text-[#3D0470] text-[26px] font-[300]">Join our Beta</h3>
+                  <p className="text-[#3D0470] font-[300] my-3">
+                    Get early access to QuantumApps.AI and be part of shaping
+                    the future of AI-powered development.
+                  </p>
+                  
                 <motion.a
                   href="#"
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
-                  className="inline-flex items-center gap-2 bg-[#F59E0B] hover:bg-[#D97706] text-white font-bold px-6 py-3 rounded-full text-sm transition-colors shadow-lg shadow-orange-900/30"
+                  className="inline-flex items-center gap-2 bg-[#F59E0B] hover:bg-[#D97706] text-black font-[300] px-6 py-3 rounded-full text-md transition-colors shadow-lg shadow-orange-900/30"
                 >
-                  Book a Demo
+                  Limited Spots Available
                 </motion.a>
+                </div>
               </div>
-
-              <p className="text-white/35 text-xs mt-5">
-                We typically respond within one business day.
-              </p>
             </motion.div>
           </div>
         </div>
