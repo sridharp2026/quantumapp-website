@@ -21,271 +21,6 @@ const fadeUp = {
 };
 const stagger = { hidden: {}, show: { transition: { staggerChildren: 0.12 } } };
 
-/* ─── VALUE ILLUSTRATION (shield + security) ─────────────────────── */
-function ValueIllustration() {
-  return (
-    <svg
-      viewBox="0 0 320 280"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="w-full max-w-sm mx-auto"
-    >
-      {/* Glow */}
-      <ellipse
-        cx="160"
-        cy="150"
-        rx="115"
-        ry="90"
-        fill="url(#valueGlow)"
-        opacity="0.4"
-      />
-
-      {/* Outer ring decoration */}
-      <circle
-        cx="160"
-        cy="148"
-        r="105"
-        stroke="#7F25D1"
-        strokeWidth="1"
-        strokeDasharray="6 4"
-        opacity="0.4"
-      />
-      <circle
-        cx="160"
-        cy="148"
-        r="85"
-        stroke="#A855F7"
-        strokeWidth="1"
-        strokeDasharray="4 6"
-        opacity="0.3"
-      />
-
-      {/* Main shield */}
-      <path
-        d="M160 40 L215 65 L215 130 Q215 175 160 200 Q105 175 105 130 L105 65 Z"
-        fill="url(#shieldGrad)"
-        stroke="#7F25D1"
-        strokeWidth="2"
-      />
-      <path
-        d="M160 52 L207 74 L207 130 Q207 168 160 190 Q113 168 113 130 L113 74 Z"
-        fill="#2D0878"
-        opacity="0.6"
-      />
-
-      {/* Checkmark */}
-      <path
-        d="M138 128 L152 143 L183 112"
-        stroke="#F59E0B"
-        strokeWidth="5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        fill="none"
-      />
-
-      {/* Lock icon inside lower shield area */}
-      <rect
-        x="148"
-        y="155"
-        width="24"
-        height="18"
-        rx="3"
-        fill="#3B0D9E"
-        stroke="#7F25D1"
-        strokeWidth="1.5"
-      />
-      <path
-        d="M153 155 L153 148 Q153 141 160 141 Q167 141 167 148 L167 155"
-        stroke="#7F25D1"
-        strokeWidth="2"
-        fill="none"
-        strokeLinecap="round"
-      />
-      <circle cx="160" cy="164" r="3" fill="#F59E0B" />
-
-      {/* Orbiting security icons */}
-      {/* Icon 1: key */}
-      <circle
-        cx="65"
-        cy="90"
-        r="18"
-        fill="#2D0878"
-        stroke="#7F25D1"
-        strokeWidth="1.5"
-        opacity="0.9"
-      />
-      <circle
-        cx="62"
-        cy="88"
-        r="5"
-        stroke="#F59E0B"
-        strokeWidth="1.5"
-        fill="none"
-      />
-      <line
-        x1="66"
-        y1="91"
-        x2="74"
-        y2="99"
-        stroke="#F59E0B"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-      />
-      <line
-        x1="71"
-        y1="96"
-        x2="71"
-        y2="100"
-        stroke="#F59E0B"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-      />
-      <line
-        x1="73"
-        y1="98"
-        x2="73"
-        y2="102"
-        stroke="#F59E0B"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-      />
-
-      {/* Icon 2: eye/visibility */}
-      <circle
-        cx="255"
-        cy="90"
-        r="18"
-        fill="#2D0878"
-        stroke="#7F25D1"
-        strokeWidth="1.5"
-        opacity="0.9"
-      />
-      <path
-        d="M246 90 Q255 82 264 90 Q255 98 246 90"
-        stroke="#A855F7"
-        strokeWidth="1.5"
-        fill="none"
-      />
-      <circle cx="255" cy="90" r="3" fill="#A855F7" />
-
-      {/* Icon 3: fingerprint */}
-      <circle
-        cx="80"
-        cy="205"
-        r="18"
-        fill="#2D0878"
-        stroke="#7F25D1"
-        strokeWidth="1.5"
-        opacity="0.9"
-      />
-      <path
-        d="M80 197 Q72 200 72 207 Q72 214 80 216"
-        stroke="#60A5FA"
-        strokeWidth="1.5"
-        fill="none"
-        strokeLinecap="round"
-      />
-      <path
-        d="M80 200 Q75 203 75 208"
-        stroke="#60A5FA"
-        strokeWidth="1.5"
-        fill="none"
-        strokeLinecap="round"
-      />
-      <path
-        d="M80 203 Q78 205 78 208 Q78 212 80 213"
-        stroke="#60A5FA"
-        strokeWidth="1.5"
-        fill="none"
-        strokeLinecap="round"
-      />
-
-      {/* Icon 4: data */}
-      <circle
-        cx="240"
-        cy="205"
-        r="18"
-        fill="#2D0878"
-        stroke="#7F25D1"
-        strokeWidth="1.5"
-        opacity="0.9"
-      />
-      <rect x="232" y="200" width="16" height="3" rx="1" fill="#FBBF24" />
-      <rect
-        x="232"
-        y="206"
-        width="10"
-        height="3"
-        rx="1"
-        fill="#FBBF24"
-        opacity="0.7"
-      />
-      <rect
-        x="232"
-        y="212"
-        width="13"
-        height="3"
-        rx="1"
-        fill="#FBBF24"
-        opacity="0.5"
-      />
-
-      {/* Connecting lines from shield to icons */}
-      <line
-        x1="115"
-        y1="110"
-        x2="82"
-        y2="97"
-        stroke="#7F25D1"
-        strokeWidth="1"
-        strokeDasharray="3 3"
-        opacity="0.5"
-      />
-      <line
-        x1="205"
-        y1="110"
-        x2="238"
-        y2="97"
-        stroke="#7F25D1"
-        strokeWidth="1"
-        strokeDasharray="3 3"
-        opacity="0.5"
-      />
-      <line
-        x1="120"
-        y1="170"
-        x2="93"
-        y2="196"
-        stroke="#7F25D1"
-        strokeWidth="1"
-        strokeDasharray="3 3"
-        opacity="0.5"
-      />
-      <line
-        x1="200"
-        y1="170"
-        x2="227"
-        y2="196"
-        stroke="#7F25D1"
-        strokeWidth="1"
-        strokeDasharray="3 3"
-        opacity="0.5"
-      />
-
-      <defs>
-        <radialGradient id="valueGlow" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopColor="#7F25D1" />
-          <stop offset="100%" stopColor="#7F25D1" stopOpacity="0" />
-        </radialGradient>
-        <linearGradient id="shieldGrad" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stopColor="#5B21B6" />
-          <stop offset="100%" stopColor="#3B0D9E" />
-        </linearGradient>
-      </defs>
-    </svg>
-  );
-}
-
 /* ─── MAIN COMPONENT ─────────────────────────────────────────────── */
 export default function AboutContent() {
   const [form, setForm] = useState({ name: "", email: "", role: "", message: "" });
@@ -323,8 +58,8 @@ export default function AboutContent() {
     <main className="overflow-hidden">
       {/* ── HERO ──────────────────────────────────────────────────── */}
       <section className="product-hero-bg flex items-center min-h-screen pt-24 pb-16 px-6 overflow-hidden">
-        <div className="max-w-5xl mx-auto">
-          <AboutHero />
+        <div className="max-w-5xl mx-auto w-full">
+          <AboutHero width="100%" />
         </div>
       </section>
 
@@ -363,9 +98,9 @@ export default function AboutContent() {
             {/* Illustration */}
             <motion.div
               variants={fadeUp}
-              className="flex items-center justify-center"
+              className="flex items-center justify-center w-full"
             >
-              <AboutMission />
+              <AboutMission width="100%" />
             </motion.div>
           </motion.div>
         </div>
@@ -388,9 +123,9 @@ export default function AboutContent() {
             {/* Illustration — left on desktop */}
             <motion.div
               variants={fadeUp}
-              className="flex items-center justify-center order-2 lg:order-1"
+              className="flex items-center justify-center order-2 lg:order-1 w-full"
             >
-              <AboutVision />
+              <AboutVision width="100%" />
             </motion.div>
 
             {/* Text — right on desktop */}
@@ -441,9 +176,9 @@ export default function AboutContent() {
             {/* Illustration */}
             <motion.div
               variants={fadeUp}
-              className="flex items-center justify-center"
+              className="flex items-center justify-center w-full"
             >
-              <AboutValue />
+              <AboutValue width="100%" />
             </motion.div>
           </motion.div>
         </div>

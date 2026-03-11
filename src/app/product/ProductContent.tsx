@@ -117,7 +117,9 @@ export default function ProductContent() {
                 In Partnership
                 <div className="flex items-center gap-4 sm:gap-8">
                   <span className="text-3xl sm:text-4xl md:text-5xl lg:text-[59px]">with </span>
-                  <ProductGoviText />
+                  <div className="w-[160px] sm:w-[220px] md:w-[280px] lg:w-[370px]">
+                    <ProductGoviText width="100%" />
+                  </div>
                 </div>
               </h1>
 
@@ -141,7 +143,7 @@ export default function ProductContent() {
             >
               {/* purple card backdrop */}
               <div className="relative w-full h-full p-4">
-                <ProductAIPowered />
+                <ProductAIPowered width="100%" />
               </div>
             </motion.div>
           </div>
