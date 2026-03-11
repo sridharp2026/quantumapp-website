@@ -619,7 +619,7 @@ export default function AboutContent() {
                   </p>
                   
                 <motion.a
-                  href="#"
+                  href="/contact"
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
                   className="inline-flex items-center gap-2 bg-[#F59E0B] hover:bg-[#D97706] text-black font-[300] px-6 py-3 rounded-full text-md transition-colors shadow-lg shadow-orange-900/30"

@@ -88,8 +88,13 @@ body {
 
 body {
   color: white;
-  background: linear-gradient(353deg, #7F25D1 -3.36%, #230256 44.12%, #7F25D1 96.4%);
-
+  background-image: 
+    url('/assets/footer-bg.png'),
+    linear-gradient(353deg, #7F25D1 -3.36%, #230256 44.12%, #7F25D1 96.4%);
+    
+  background-size: 100% auto, cover;
+  background-position: bottom, center;
+  background-repeat: no-repeat, no-repeat;
 }
 
 .hero-bg, .digitize-bg, .product-hero-bg{
@@ -99,12 +104,8 @@ body {
 }
 
 
-.hero-bg, .digitize-bg, .product-hero-bg {
+.hero-bg, .product-hero-bg {
   background-image: url('/assets/hero-bg.png');
-}
-
-.digitize-bg {
-  background-image: url('/assets/digitize-bg.png');
 }
 
 .product-hero-bg {
@@ -139,6 +140,15 @@ body {
   background-position: center +50px; /* negative bottom offset */
   background-blend-mode: lighten;
 }
+
+
+/* 
+.footer-bg{
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url('/assets/footer-bg.png');
+} */
 
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: #230256; }

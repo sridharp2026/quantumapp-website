@@ -6,7 +6,7 @@ import { Mail, Phone, MapPin, Calendar, Send, CheckCircle } from 'lucide-react'
 import PageHero from '@/components/layout/PageHero'
 
 const contactInfo = [
-  { Icon: Mail, label: 'Email', value: 'hello@quantumapps.ai', href: 'mailto:hello@quantumapps.ai' },
+  { Icon: Mail, label: 'Email', value: 'admin@quantumapps.ai', href: 'mailto:admin@quantumapps.ai' },
   { Icon: Phone, label: 'Phone', value: '+1 (202) 555-0147', href: 'tel:+12025550147' },
   { Icon: MapPin, label: 'Headquarters', value: 'Washington, DC', href: null },
   { Icon: Calendar, label: 'Schedule a Demo', value: 'Book a 30-min call', href: '#' },
@@ -45,7 +45,7 @@ export default function ContactContent() {
     }
   }
 
-  const inputClass = 'w-full bg-[#1a0045]/60 border border-purple-500/30 rounded-xl px-4 py-3 text-white placeholder:text-purple-300/35 text-sm focus:outline-none focus:border-purple-400/70 focus:bg-[#2D0878]/40 transition-all'
+  const inputClass = 'w-full bg-[#431396]/60 border border-purple-500/30 rounded-xl px-4 py-3 text-white placeholder:text-white/55 text-sm focus:outline-none focus:border-purple-400/70 focus:bg-[#2D0878]/40 transition-all'
 
   return (
     <main>
@@ -66,7 +66,7 @@ export default function ContactContent() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
-              className="lg:col-span-3 bg-[#2D0878]/40 border border-purple-500/25 rounded-3xl p-8 backdrop-blur-sm"
+              className="lg:col-span-3 bg-purple-700 border border-purple-500/25 rounded-3xl p-8 backdrop-blur-sm"
             >
               {submitted ? (
                 <div className="flex flex-col items-center justify-center h-full min-h-[400px] text-center">
@@ -80,32 +80,32 @@ export default function ContactContent() {
                 </div>
               ) : (
                 <>
-                  <h3 className="text-white font-bold text-xl mb-6">Send Us a Message</h3>
+                  <h3 className="font-[300] text-xl mb-6">Send Us a Message</h3>
                   <form onSubmit={handleSubmit} className="space-y-4">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
-                        <label className="block text-purple-200/60 text-xs font-medium mb-1.5">Full Name *</label>
+                        <label className="block text-white/70 text-xs mb-1.5">Full Name *</label>
                         <input name="name" value={form.name} onChange={handleChange} required placeholder="Jane Smith" className={inputClass} />
                       </div>
                       <div>
-                        <label className="block text-purple-200/60 text-xs font-medium mb-1.5">Work Email *</label>
+                        <label className="block text-white/70 text-xs mb-1.5">Work Email *</label>
                         <input name="email" type="email" value={form.email} onChange={handleChange} required placeholder="jane@agency.gov" className={inputClass} />
                       </div>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
-                        <label className="block text-purple-200/60 text-xs font-medium mb-1.5">Agency / Organization *</label>
+                        <label className="block text-white/70 text-xs mb-1.5">Agency / Organization *</label>
                         <input name="agency" value={form.agency} onChange={handleChange} required placeholder="Dept. of Homeland Security" className={inputClass} />
                       </div>
                       <div>
-                        <label className="block text-purple-200/60 text-xs font-medium mb-1.5">Phone</label>
+                        <label className="block text-white/70 text-xs mb-1.5">Phone</label>
                         <input name="phone" type="tel" value={form.phone} onChange={handleChange} placeholder="+1 (555) 000-0000" className={inputClass} />
                       </div>
                     </div>
 
                     <div>
-                      <label className="block text-purple-200/60 text-xs font-medium mb-1.5">How can we help? *</label>
+                      <label className="block text-white/70 text-xs mb-1.5">How can we help? *</label>
                       <textarea name="message" value={form.message} onChange={handleChange} required rows={5} placeholder="Tell us about your agency's challenges..." className={inputClass + ' resize-none'} />
                     </div>
 
@@ -114,7 +114,7 @@ export default function ContactContent() {
                       disabled={loading}
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
-                      className="w-full flex items-center justify-center gap-2 bg-[#F59E0B] hover:bg-[#D97706] disabled:opacity-60 text-white font-bold py-3.5 rounded-full text-sm transition-colors shadow-lg shadow-orange-600/25"
+                      className="w-full flex items-center justify-center gap-2 bg-[#F59E0B] hover:bg-[#D97706] disabled:opacity-60 text-white font-[300] py-3.5 rounded-full text-sm transition-colors shadow-lg shadow-orange-600/25"
                     >
                       {loading ? <span className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" /> : <Send size={14} />}
                       {loading ? 'Sending…' : 'Send Message'}
