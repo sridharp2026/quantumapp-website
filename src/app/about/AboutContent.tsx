@@ -288,7 +288,7 @@ function ValueIllustration() {
 
 /* ─── MAIN COMPONENT ─────────────────────────────────────────────── */
 export default function AboutContent() {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [form, setForm] = useState({ name: "", email: "", role: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -302,7 +302,7 @@ export default function AboutContent() {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch("/api/about-contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
@@ -539,8 +539,8 @@ export default function AboutContent() {
                         I am a...
                       </label>
                       <input
-                        name="aboutme"
-                        value={form.name}
+                        name="role"
+                        value={form.role}
                         onChange={handleChange}
                         required
                         placeholder="Developer"
