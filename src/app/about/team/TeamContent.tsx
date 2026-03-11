@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Linkedin } from 'lucide-react'
 import PageHero from '@/components/layout/PageHero'
+import Button from '@/components/ui/Button'
 
 const team = [
   { name: 'Sarah Chen', title: 'Co-Founder & CEO', bio: 'Former Deputy CTO of the U.S. Digital Service. 15 years modernizing federal systems at DoD, HHS, and USDS.', initials: 'SC', color: 'from-purple-500 to-violet-600' },
@@ -47,9 +48,9 @@ export default function TeamContent() {
                 <h3 className="text-white font-bold text-base mb-0.5">{name}</h3>
                 <p className="text-[#F59E0B] text-xs font-semibold mb-3">{title}</p>
                 <p className="text-purple-200/60 text-xs leading-relaxed mb-4">{bio}</p>
-                <button className="w-8 h-8 rounded-lg bg-purple-900/50 border border-purple-700/30 flex items-center justify-center mx-auto text-purple-400 hover:text-white hover:bg-purple-700/50 transition-colors">
+                <Button variant="icon-purple" className="mx-auto">
                   <Linkedin size={13} />
-                </button>
+                </Button>
               </motion.div>
             ))}
           </motion.div>

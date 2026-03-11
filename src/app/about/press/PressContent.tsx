@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { ExternalLink, Calendar } from 'lucide-react'
 import PageHero from '@/components/layout/PageHero'
+import Button from '@/components/ui/Button'
 
 const pressItems = [
   { outlet: 'TechCrunch', date: 'January 2025', headline: 'QuantumApps.AI Secures FedRAMP Authorization, Opening Doors to Federal Procurement', excerpt: 'The government AI startup achieves one of the most rigorous cloud security certifications, paving the way for deployment across federal agencies.', color: 'from-green-500 to-emerald-600', initials: 'TC' },
@@ -75,13 +76,13 @@ export default function PressContent() {
               <h3 className="text-white font-bold text-xl mb-5">Press Resources</h3>
               <div className="space-y-3">
                 {pressAssets.map(({ title, description }) => (
-                  <button key={title} className="w-full text-left flex items-center justify-between p-3 rounded-xl hover:bg-purple-900/30 transition-colors group">
+                  <Button key={title} variant="list-item">
                     <div>
                       <p className="text-white text-sm font-medium">{title}</p>
                       <p className="text-purple-300/50 text-xs">{description}</p>
                     </div>
                     <ExternalLink size={13} className="text-purple-400/40 group-hover:text-purple-300 transition-colors flex-shrink-0 ml-3" />
-                  </button>
+                  </Button>
                 ))}
               </div>
             </motion.div>

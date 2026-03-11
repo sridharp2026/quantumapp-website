@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { NAV_LINKS } from "@/lib/data";
 import { QuantumAppsLogo } from '@/assets/svg';
+import Button from '@/components/ui/Button';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -79,8 +80,9 @@ export default function Navbar() {
         </div>
 
         {/* Mobile toggle */}
-        <button
-          className="md:hidden text-white p-1"
+        <Button
+          variant="ghost"
+          className="md:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
@@ -95,7 +97,7 @@ export default function Navbar() {
               {mobileOpen ? <X size={22} /> : <Menu size={22} />}
             </motion.span>
           </AnimatePresence>
-        </button>
+        </Button>
       </div>
 
       {/* Mobile menu */}

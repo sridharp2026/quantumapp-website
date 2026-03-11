@@ -25,7 +25,7 @@ const stagger = { hidden: {}, show: { transition: { staggerChildren: 0.12 } } };
 /* ─── MAIN COMPONENT ─────────────────────────────────────────────── */
 export default function AboutContent() {
   const [form, setForm] = useState({ name: "", email: "", role: "", message: "" });
-  const [submitted, setSubmitted] = useState(true);
+  const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
   function handleChange(
