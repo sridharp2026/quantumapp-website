@@ -509,7 +509,7 @@ export default function AboutContent() {
                   <form onSubmit={handleSubmit} className="space-y-4 mt-5">
                     <div>
                       <label className="block text-[#3B1161] font-[300] mb-1.5 tracking-wide">
-                        Your Name
+                        Full Name
                       </label>
                       <input
                         name="name"
@@ -531,6 +531,19 @@ export default function AboutContent() {
                         onChange={handleChange}
                         required
                         placeholder="jane@agency.gov"
+                        className={inputClass}
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-[#3B1161] font-[300] mb-1.5 tracking-wide">
+                        I am a...
+                      </label>
+                      <input
+                        name="aboutme"
+                        value={form.name}
+                        onChange={handleChange}
+                        required
+                        placeholder="Developer"
                         className={inputClass}
                       />
                     </div>
