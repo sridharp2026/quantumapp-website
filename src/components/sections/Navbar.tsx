@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { NAV_LINKS } from "@/lib/data";
-import { QuantumAppsLogo } from "../../../public/assets/svg";
+import { QuantumAppsLogo } from '@/assets/svg';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);

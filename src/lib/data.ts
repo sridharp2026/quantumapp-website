@@ -12,7 +12,7 @@ import {
   Navigation2,
 } from 'lucide-react'
 import type { NavLink, ChallengeItem, SolutionItem, FeatureItem, Particle } from '@/types'
-import { Cloude, CostEffective, Data, Doller, Intelliget, Intutive, Legancy, Timer } from '../../public/assets/svg'
+import { Cloude, CostEffective, Data, Doller, Intelliget, Intutive, Legancy, Timer } from '@/assets/svg'
 
 export const NAV_LINKS: NavLink[] = [
   { label: 'Home', href: '/' },

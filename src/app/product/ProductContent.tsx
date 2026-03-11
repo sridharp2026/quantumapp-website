@@ -25,7 +25,7 @@ import {
   ProductProvider,
   ProductScheduling,
   ProductStreamLine,
-} from "../../../public/assets/svg";
+} from '@/assets/svg';
 
 const features = [
   {

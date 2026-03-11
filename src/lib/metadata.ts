@@ -1,7 +1,7 @@
 export const BASE_URL = 'https://quantumapps.ai'
 
 export const BASE_OG_IMAGE = {
-  url: `${BASE_URL}/og-image.png`,
+  url: `${BASE_URL}/opengraph-image`,
   width: 1200,
   height: 630,
   alt: 'QuantumApps.AI – AI Platform for Government Operations',

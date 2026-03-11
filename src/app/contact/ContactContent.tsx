@@ -66,15 +66,15 @@ export default function ContactContent() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
-              className="lg:col-span-3 bg-purple-700 border border-purple-500/25 rounded-3xl p-8 backdrop-blur-sm"
+              className="lg:col-span-3 bg-[#2D0878]/45 border border-purple-500/25 rounded-3xl p-8 backdrop-blur-sm"
             >
               {submitted ? (
                 <div className="flex flex-col items-center justify-center h-full min-h-[400px] text-center">
                   <motion.div initial={{ scale: 0.7, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ type: 'spring', stiffness: 200 }}>
                     <CheckCircle size={56} className="text-green-400 mx-auto mb-5" />
                   </motion.div>
-                  <h3 className="text-white font-extrabold text-2xl mb-3">Message Received</h3>
-                  <p className="text-purple-200/65 text-sm max-w-sm leading-relaxed">
+                  <h3 className="text-white font-[300] text-3xl mb-3">Message Received</h3>
+                  <p className="text-white/65 max-w-sm leading-relaxed">
                     Thank you for reaching out. A member of our team will be in touch within one business day.
                   </p>
                 </div>
@@ -114,7 +114,7 @@ export default function ContactContent() {
                       disabled={loading}
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
-                      className="w-full flex items-center justify-center gap-2 bg-[#F59E0B] hover:bg-[#D97706] disabled:opacity-60 text-white font-[300] py-3.5 rounded-full text-sm transition-colors shadow-lg shadow-orange-600/25"
+                      className="w-full flex items-center justify-center gap-2 bg-[#F59E0B] hover:bg-[#D97706] disabled:opacity-60 text-black py-3.5 rounded-full text-sm transition-colors shadow-lg shadow-orange-600/25"
                     >
                       {loading ? <span className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" /> : <Send size={14} />}
                       {loading ? 'Sending…' : 'Send Message'}
@@ -152,15 +152,15 @@ export default function ContactContent() {
                 className="bg-gradient-to-br from-[#3B0D9E]/60 to-[#2D0878]/70 border border-purple-400/30 rounded-3xl p-7 backdrop-blur-sm"
               >
                 <Calendar size={28} className="text-[#F59E0B] mb-3" />
-                <h4 className="text-white font-bold text-lg mb-2">Schedule a Demo</h4>
-                <p className="text-purple-200/60 text-sm leading-relaxed mb-5">
+                <h4 className="text-white font-[300] text-lg mb-2">Schedule a Demo</h4>
+                <p className="text-white/80 text-sm leading-relaxed mb-5">
                   See QuantumApps.AI in action with a personalized 30-minute walkthrough tailored to your agency&apos;s workflows.
                 </p>
                 <motion.a
                   href="#"
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
-                  className="inline-flex items-center gap-2 bg-[#F59E0B] hover:bg-[#D97706] text-white font-bold px-6 py-3 rounded-full text-sm transition-colors shadow-lg shadow-orange-600/25"
+                  className="inline-flex items-center gap-2 bg-[#F59E0B] hover:bg-[#D97706] text-black px-6 py-3 rounded-full text-sm transition-colors shadow-lg shadow-orange-600/25"
                 >
                   Book a Time <Calendar size={13} />
                 </motion.a>
@@ -171,7 +171,7 @@ export default function ContactContent() {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.4 }}
-                className="text-purple-300/40 text-xs text-center px-2"
+                className="text-white/80 text-xs text-center px-2"
               >
                 We typically respond within one business day.
               </motion.p>

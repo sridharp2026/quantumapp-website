@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { CHALLENGES } from "@/lib/data";
-import { Challenge } from "../../../public/assets/svg";
+import { Challenge } from '@/assets/svg';
 
 const stagger = {
   hidden: {},

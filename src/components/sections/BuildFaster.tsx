@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { BUILD_FEATURES } from "@/lib/data";
-import { ModernSystel } from "../../../public/assets/svg";
+import { ModernSystel } from '@/assets/svg';
 
 export default function BuildFaster() {
   const cardColors = ["bg-[#691CC1]", "bg-[#691CC1]", "bg-[#7F25D1]"];

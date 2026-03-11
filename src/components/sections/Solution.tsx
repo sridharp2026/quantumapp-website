@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { SOLUTIONS } from '@/lib/data'
-import { SolutionIcon } from '../../../public/assets/svg'
+import { SolutionIcon } from '@/assets/svg'
 
 const stagger = {
   hidden: {},

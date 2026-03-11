@@ -8,7 +8,7 @@ import {
   AboutMission,
   AboutValue,
   AboutVision,
-} from "../../../public/assets/svg";
+} from '@/assets/svg';
 import MouseParticles from "@/components/ui/MouseParticles";
 
 /* ─── animation variants ─────────────────────────────────────────── */
@@ -25,7 +25,7 @@ const stagger = { hidden: {}, show: { transition: { staggerChildren: 0.12 } } };
 /* ─── MAIN COMPONENT ─────────────────────────────────────────────── */
 export default function AboutContent() {
   const [form, setForm] = useState({ name: "", email: "", role: "", message: "" });
-  const [submitted, setSubmitted] = useState(false);
+  const [submitted, setSubmitted] = useState(true);
   const [loading, setLoading] = useState(false);
 
   function handleChange(
@@ -232,13 +232,13 @@ export default function AboutContent() {
                     >
                       <CheckCircle
                         size={56}
-                        className="text-white mx-auto mb-5"
+                        className="text-green-600 mx-auto mb-5"
                       />
                     </motion.div>
-                    <h3 className="text-white font-extrabold text-2xl mb-2">
+                    <h3 className="font-[300] text-3xl mb-2">
                       Message Received!
                     </h3>
-                    <p className="text-white/75 text-sm">
+                    <p className="text-white/75">
                       We'll be in touch within one business day.
                     </p>
                   </div>

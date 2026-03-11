@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Mail, Linkedin, X } from "lucide-react";
-import { FooterFacebook, FooterInstagram, FooterLinkedIn, FooterYoutube, QuantumAppsLogo } from "../../../public/assets/svg";
+import { FooterFacebook, FooterInstagram, FooterLinkedIn, FooterYoutube, QuantumAppsLogo } from '@/assets/svg';
 
 const COMPANY_LINKS = [
   { label: "Home", href: "/" },
