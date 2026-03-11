@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import MouseParticles from "@/components/ui/MouseParticles";
 import {
   Workflow,
   CheckSquare,
@@ -105,6 +106,7 @@ export default function ProductContent() {
     <main className="overflow-hidden">
       {/* ── Hero ── */}
       <section className="product-hero-bg flex items-center min-h-screen relative pt-24 pb-16 px-6 overflow-hidden">
+        <MouseParticles />
         <div className="max-w-6xl mx-auto relative">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Left text */}

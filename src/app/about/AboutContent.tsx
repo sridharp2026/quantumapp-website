@@ -9,6 +9,7 @@ import {
   AboutValue,
   AboutVision,
 } from "../../../public/assets/svg";
+import MouseParticles from "@/components/ui/MouseParticles";
 
 /* ─── animation variants ─────────────────────────────────────────── */
 const fadeUp = {
@@ -57,7 +58,8 @@ export default function AboutContent() {
   return (
     <main className="overflow-hidden">
       {/* ── HERO ──────────────────────────────────────────────────── */}
-      <section className="product-hero-bg flex items-center min-h-screen pt-24 pb-16 px-6 overflow-hidden">
+      <section className="product-hero-bg flex items-center min-h-screen relative pt-24 pb-16 px-6 overflow-hidden">
+        <MouseParticles />
         <div className="max-w-5xl mx-auto w-full">
           <AboutHero width="100%" />
         </div>

@@ -1,63 +1,15 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Button from "@/components/ui/Button";
+import MouseParticles from "@/components/ui/MouseParticles";
 import { HERO_PARTICLES } from "@/lib/data";
 
 export default function Hero() {
-  const particlesRef = useRef<HTMLDivElement>(null);
-  const [mouseParticles, setMouseParticles] = useState<any[]>([]);
-
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      const mouseX = (e.clientX / window.innerWidth) * 100;
-      const mouseY = (e.clientY / window.innerHeight) * 100;
-      const id = Date.now();
-
-      setMouseParticles((prev) => [
-        ...prev,
-        { id, x: mouseX, y: mouseY, size: Math.random() * 4 + 2 },
-      ]);
-
-      setTimeout(() => {
-        setMouseParticles((prev) => prev.filter((p) => p.id !== id));
-      }, 2000);
-    };
-
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, []);
-
   return (
     <section className="hero-bg relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div
-        ref={particlesRef}
-        className="absolute inset-0 pointer-events-none overflow-hidden"
-      >
-        {mouseParticles.map((p) => (
-          <motion.div
-            key={p.id}
-            initial={{ opacity: 0.6, x: 0, y: 0 }}
-            animate={{
-              opacity: 0,
-              x: Math.random() * 80 - 40,
-              y: Math.random() * 80 - 40,
-            }}
-            transition={{ duration: 2, ease: "easeOut" }}
-            className="absolute rounded-full"
-            style={{
-              left: `${p.x}%`,
-              top: `${p.y}%`,
-              width: `${p.size}px`,
-              height: `${p.size}px`,
-              background:
-                "radial-gradient(circle, rgba(234,41,251,1) 60%, transparent 100%)",
-            }}
-          />
-        ))}
-      </div>
+      <MouseParticles />
 
       <div className="absolute inset-0 grid-bg opacity-50 pointer-events-none" />
 
