@@ -113,19 +113,19 @@ export default function ProductContent() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
             >
-              <h1 className="text-[79px] [text-shadow:12px_13px_4px_rgba(0,0,0,0.29)] font-[300] leading-tight mb-4">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[79px] [text-shadow:12px_13px_4px_rgba(0,0,0,0.29)] font-[300] leading-tight mb-4">
                 In Partnership
-                <div className="flex items-center gap-8">
-                  <span className="text-[59px]">with </span>
+                <div className="flex items-center gap-4 sm:gap-8">
+                  <span className="text-3xl sm:text-4xl md:text-5xl lg:text-[59px]">with </span>
                   <ProductGoviText />
                 </div>
               </h1>
 
-              <div className="mt-5 text-[59px] font-[300]">
+              <div className="mt-5 text-3xl sm:text-4xl md:text-5xl lg:text-[59px] font-[300]">
                 <span className="text-[#F59E0B]">AI</span>
                 <span className="">-Powered</span>
               </div>
-              <p className="text-[28px] font-[300]">Court Operations</p>
+              <p className="text-xl sm:text-2xl md:text-[28px] font-[300]">Court Operations</p>
             </motion.div>
 
             {/* Right illustration */}
@@ -175,14 +175,14 @@ export default function ProductContent() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
-              className="flex items-end gap-20"
+              className="flex flex-col sm:flex-row items-start sm:items-end gap-8 sm:gap-20"
             >
-              <ProductCourtCalender />
+              <div className="w-full sm:w-auto flex justify-center sm:justify-start"><ProductCourtCalender /></div>
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="text-[36px] font-[300] mb-8 leading-snug"
+                className="text-2xl sm:text-3xl md:text-[36px] font-[300] mb-0 sm:mb-8 leading-snug"
               >
                 Court Calendar leverages
                 <br />
@@ -195,7 +195,7 @@ export default function ProductContent() {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="grid grid-cols-4 gap-8"
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
             >
               {features.map(({ Icon, description }, i) => (
                 <motion.div
@@ -227,10 +227,10 @@ export default function ProductContent() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="flex items-end justify-between gap-20 mb-20"
+                className="flex flex-col sm:flex-row items-start sm:items-end gap-8 sm:gap-20 mb-10 sm:mb-20"
               >
-                <div className="text-[32px]">
-                  <h2 className="text-[42px] font-[300] leading-tight">
+                <div className="text-xl sm:text-[32px]">
+                  <h2 className="text-3xl sm:text-[42px] font-[300] leading-tight">
                     Impact
                   </h2>
                   <p className="mt-1">With Court Calendar, courts can:</p>
@@ -285,7 +285,7 @@ export default function ProductContent() {
                       )}
                     </div>
                     <p
-                      className={`leading-relaxed font-[300] p-16 text-black`}
+                      className={`leading-relaxed font-[300] p-8 sm:p-12 lg:p-16 text-black`}
                     >
                       {description}
                     </p>
@@ -305,7 +305,7 @@ export default function ProductContent() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <p className="text-right text-[#F8C557] font-[300] text-[42px]">Result</p>
+            <p className="text-right text-[#F8C557] font-[300] text-2xl sm:text-3xl md:text-[42px]">Result</p>
             <p className="text-right text-[#D8D8D8] max-w-3xl ml-auto text-[18px] leading-relaxed">
               Judicial staff can focus on meaningful work, while the AI handles
               repetitive, precise, and context-sensitive tasks — making court
@@ -353,7 +353,7 @@ export default function ProductContent() {
             <div className="bg-[#0f0028] p-5">
               {/* Top nav */}
               <div className="flex items-center gap-3 mb-5 pb-3 border-b border-purple-800/40">
-                <div className="flex gap-1.5">
+                <div className="flex flex-wrap gap-1.5">
                   {[
                     "Dashboard",
                     "Entry Types",
@@ -385,7 +385,7 @@ export default function ProductContent() {
               </p>
 
               {/* Filter row */}
-              <div className="flex gap-2 mb-5">
+              <div className="flex flex-wrap gap-2 mb-5">
                 {[
                   "Project",
                   "Group",
@@ -406,7 +406,7 @@ export default function ProductContent() {
               {/* Stat grids */}
               <div className="space-y-3">
                 {dashStats.map((row, ri) => (
-                  <div key={ri} className="grid grid-cols-6 gap-2">
+                  <div key={ri} className="grid grid-cols-3 sm:grid-cols-6 gap-2">
                     {row.map(({ label, val }, ci) => (
                       <div
                         key={ci}

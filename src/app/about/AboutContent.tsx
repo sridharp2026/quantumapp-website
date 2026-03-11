@@ -600,7 +600,7 @@ export default function AboutContent() {
                 journey on social media.
               </p>
               <div className="space-y-5 mb-10">
-                <div className="flex items-center w-[350px] gap-4 pl-6 bg-[#431396] rounded-[50px] p-2">
+                <div className="flex items-center w-full max-w-[350px] gap-4 pl-6 bg-[#431396] rounded-[50px] p-2">
                   <Mail size={17} className="text-[#F59E0B]" />
                   <div>
                     <p className="text-[#F6D388]">Email</p>
@@ -612,7 +612,7 @@ export default function AboutContent() {
                     </a>
                   </div>
                 </div>
-                <div className="inline-flex items-center min-w-[350px] gap-4 px-6 bg-[#431396] rounded-[50px] p-2">
+                <div className="inline-flex items-center w-full max-w-[350px] gap-4 px-6 bg-[#431396] rounded-[50px] p-2">
                   <Phone size={17} className="text-[#F59E0B]" />
                   <div>
                     <p className="text-[#F6D388]">Follow on Linkedin</p>
@@ -624,7 +624,7 @@ export default function AboutContent() {
                     </a>
                   </div>
                 </div>
-                <div className="w-[350px] bg-gradient-to-l from-red-400/50 via-red-400/50 to-yellow-400/50 rounded-[20px] p-6 shadow-lg shadow-orange-900/30">
+                <div className="w-full max-w-[350px] bg-gradient-to-l from-red-400/50 via-red-400/50 to-yellow-400/50 rounded-[20px] p-6 shadow-lg shadow-orange-900/30">
                   <h3 className="text-[#3D0470] text-[26px] font-[300]">Join our Beta</h3>
                   <p className="text-[#3D0470] font-[300] my-3">
                     Get early access to QuantumApps.AI and be part of shaping
