@@ -100,10 +100,10 @@ export default function Footer() {
               Legal
             </h4>
             <a
-              href="mailto:contact@quantumappsai.com"
+              href="mailto:admin@quantumapps.ai"
               className="text-white/80 hover:text-white transition-colors"
             >
-              contact@quantumappsai.com
+              admin@quantumapps.ai
             </a>
           </div>
         </div>
