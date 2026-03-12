@@ -73,14 +73,14 @@ export default function ContactContent() {
                   <motion.div initial={{ scale: 0.7, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ type: 'spring', stiffness: 200 }}>
                     <CheckCircle size={56} className="text-green-400 mx-auto mb-5" />
                   </motion.div>
-                  <h3 className="text-white font-[300] text-3xl mb-3">Message Received</h3>
+                  <h3 className="text-white font-medium text-3xl mb-3">Message Received</h3>
                   <p className="text-white/65 max-w-sm leading-relaxed">
                     Thank you for reaching out. A member of our team will be in touch within one business day.
                   </p>
                 </div>
               ) : (
                 <>
-                  <h3 className="font-[300] text-xl mb-6">Send Us a Message</h3>
+                  <h3 className="font-medium text-xl mb-6">Send Us a Message</h3>
                   <form onSubmit={handleSubmit} className="space-y-4">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
@@ -152,7 +152,7 @@ export default function ContactContent() {
                 className="bg-gradient-to-br from-[#3B0D9E]/60 to-[#2D0878]/70 border border-purple-400/30 rounded-3xl p-7 backdrop-blur-sm"
               >
                 <Calendar size={28} className="text-[#F59E0B] mb-3" />
-                <h4 className="text-white font-[300] text-lg mb-2">Schedule a Demo</h4>
+                <h4 className="text-white font-medium text-lg mb-2">Schedule a Demo</h4>
                 <p className="text-white/80 text-sm leading-relaxed mb-5">
                   See QuantumApps.AI in action with a personalized 30-minute walkthrough tailored to your agency&apos;s workflows.
                 </p>

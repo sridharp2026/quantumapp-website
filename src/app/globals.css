@@ -2,75 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-/* black */
+/* thin */
 @font-face {
     font-family: 'nekst';
-    src: url('/fonts/fontspring-nekst-black-webfont.woff2') format('woff2'),
-         url('/fonts/fontspring-nekst-black-webfont.woff') format('woff');
-    font-weight: 600;
+    src: url('/fonts/Nekst-Thin.woff2') format('woff2'),
+         url('/fonts/Nekst-Thin.woff') format('woff');
+    font-weight: 100;
     font-style: normal;
-
-}
-
-/* bold */
-@font-face {
-    font-family: 'nekst';
-    src: url('/fonts/fontspring-nekst-bold-webfont.woff2') format('woff2'),
-         url('/fonts/fontspring-nekst-bold-webfont.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-
-}
-
-/* semi bold */
-@font-face {
-    font-family: 'nekst';
-    src: url('/fonts/fontspring-nekst-semibold-webfont.woff2') format('woff2'),
-         url('/fonts/fontspring-nekst-semibold-webfont.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-
-}
-
-/* medium */
-@font-face {
-    font-family: 'nekst';
-    src: url('/fonts/fontspring-nekst-medium-webfont.woff2') format('woff2'),
-         url('/fonts/fontspring-nekst-medium-webfont.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-
-}
-
-/* regular */
-@font-face {
-    font-family: 'nekst';
-    src: url('/fonts/fontspring-nekst-regular-webfont.woff2') format('woff2'),
-         url('/fonts/fontspring-nekst-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
 }
 
 /* light */
 @font-face {
     font-family: 'nekst';
-    src: url('/fonts/fontspring-nekst-light-webfont.woff2') format('woff2'),
-         url('/fonts/fontspring-nekst-light-webfont.woff') format('woff');
-    font-weight: 200;
+    src: url('/fonts/Nekst-Light.woff2') format('woff2'),
+         url('/fonts/Nekst-Light.woff') format('woff');
+    font-weight: 300;
     font-style: normal;
-
 }
 
-/* thin */
+/* regular */
 @font-face {
     font-family: 'nekst';
-    src: url('/fonts/fontspring-nekst-thin-webfont.woff2') format('woff2'),
-         url('/fonts/fontspring-nekst-thin-webfont.woff') format('woff');
-    font-weight: 100;
+    src: url('/fonts/Nekst-Regular.woff2') format('woff2'),
+         url('/fonts/Nekst-Regular.woff') format('woff');
+    font-weight: 400;
     font-style: normal;
-
 }
+
+/* medium */
+@font-face {
+    font-family: 'nekst';
+    src: url('/fonts/Nekst-Medium.woff2') format('woff2'),
+         url('/fonts/Nekst-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* semi bold */
+@font-face {
+    font-family: 'nekst';
+    src: url('/fonts/Nekst-SemiBold.woff2') format('woff2'),
+         url('/fonts/Nekst-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* bold */
+@font-face {
+    font-family: 'nekst';
+    src: url('/fonts/Nekst-Bold.woff2') format('woff2'),
+         url('/fonts/Nekst-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* black */
+@font-face {
+    font-family: 'nekst';
+    src: url('/fonts/Nekst-Black.woff2') format('woff2'),
+         url('/fonts/Nekst-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
 
 * {
   font-family: 'nekst';
@@ -88,6 +82,7 @@ body {
 
 body {
   color: white;
+  letter-spacing: 1px;
   background-image: 
     url('/assets/footer-bg.png'),
     linear-gradient(353deg, #7F25D1 -3.36%, #230256 44.12%, #7F25D1 96.4%);

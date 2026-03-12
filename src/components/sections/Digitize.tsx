@@ -26,7 +26,7 @@ export default function Digitize() {
           transition={{ duration: 0.8 }}
           className="mb-14"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl space-y-4 !font-[300] text-white leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl space-y-4 !font-medium text-white ">
             Digitize Government Operations,
             with Intelligent platform
           </h2>
@@ -147,7 +147,7 @@ export default function Digitize() {
           transition={{ duration: 0.6, delay: 0.3 }}
         >
           <p className="text-[#FAFAFA] sm:text-[30px] mb-5">
-            Experience <span className="font-medium text-[#FFC247]">QuantumApps.AI</span><br />in real
+            Experience <span className="font-bold text-[#FFC247]">QuantumApps.AI</span><br />in real
             government workflows.
           </p>
           <Button variant="orange" className="bg-[linear-gradient(90deg,#7F25D1_-34.01%,#F5835F_47.71%,#FECF08_127.88%)] px-10 py-4">

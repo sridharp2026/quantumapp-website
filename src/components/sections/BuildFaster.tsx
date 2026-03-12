@@ -28,7 +28,7 @@ min-[1000px]:[clip-path:polygon(0_250px,0_100%,100%_calc(100%-250px),100%_0)]"
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,255,255,0.08)_0%,transparent_60%)] pointer-events-none" />
 
       <div className="relative z-10 max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_455px] gap-14 items-center mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_385px] gap-20 items-center mb-10">
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -37,10 +37,10 @@ min-[1000px]:[clip-path:polygon(0_250px,0_100%,100%_calc(100%-250px),100%_0)]"
           >
             <h2 className="text-3xl md:text-5xl mt-8 md:mt-20 text-[#3D076C] leading-[1.1]">
               We build{" "}
-              <span className="font-medium">modern systems faster</span>,{" "}
-              <span className="font-medium">smarter</span>, and{" "}
-              <span className="font-medium">more secure</span> with{" "}
-              <span className="font-medium">Trusted AI</span> Agents.
+              <span className="font-bold">modern systems faster</span>,{" "}
+              <span className="font-bold">smarter</span>, and{" "}
+              <span className="font-bold">more secure</span> with{" "}
+              <span className="font-bold">Trusted AI</span> Agents.
             </h2>
           </motion.div>
 
@@ -58,7 +58,7 @@ min-[1000px]:[clip-path:polygon(0_250px,0_100%,100%_calc(100%-250px),100%_0)]"
             >
               <ModernSystel width="100%" />
             </motion.div>
-            <p className="text-[#000000] text-right md:text-lg leading-relaxed">
+            <p className="text-[#000000] font-semibold text-right md:text-xl leading-relaxed">
               An innovative approach to building modern and scalable systems. We
               build modern systems faster, smarter, and more secure.
             </p>
@@ -76,9 +76,9 @@ min-[1000px]:[clip-path:polygon(0_250px,0_100%,100%_calc(100%-250px),100%_0)]"
               className={`${cardColors[i]} ${cardShapes[i]} p-8 md:p-16`}
             >
               {i !== 2 && (
-                <h4 className="font-[300] text-xl md:text-[28px] mb-2 leading-snug">{title}</h4>
+                <h4 className="font-bold text-xl md:text-3xl mb-2 leading-snug">{title}</h4>
               )}
-              <p className="text-white text-base md:text-[18px] leading-relaxed mt-3">
+              <p className="text-white text-base leading-relaxed mt-3">
                 {description}
               </p>
             </motion.div>

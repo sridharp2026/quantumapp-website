@@ -91,7 +91,7 @@ export default function PricingContent() {
                 )}
 
                 <div className="mb-6">
-                  <h3 className="text-white font-extrabold text-2xl mb-1">{name}</h3>
+                  <h3 className="text-white font-light text-2xl mb-1">{name}</h3>
                   <p className="text-purple-200/60 text-sm">{tagline}</p>
                 </div>
 
@@ -120,7 +120,7 @@ export default function PricingContent() {
 
           {/* FAQ */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
-            <h2 className="text-3xl font-extrabold text-white mb-2">Frequently Asked Questions</h2>
+            <h2 className="text-3xl font-light text-white mb-2">Frequently Asked Questions</h2>
             <p className="text-purple-200/60 text-sm">Common questions from procurement and IT teams.</p>
           </motion.div>
 

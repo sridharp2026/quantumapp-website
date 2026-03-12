@@ -75,7 +75,7 @@ export default function FeaturesContent() {
                 className="flex items-center gap-4 mb-10"
               >
                 <div className={`h-1 w-10 rounded-full bg-gradient-to-r ${color}`} />
-                <h2 className="text-2xl font-extrabold text-white">{category}</h2>
+                <h2 className="text-2xl font-light text-white">{category}</h2>
               </motion.div>
 
               <motion.div

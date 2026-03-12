@@ -85,7 +85,7 @@ export default function IntegrationsContent() {
               <Plug size={13} className="text-[#F59E0B]" />
               <span className="text-purple-200 text-xs font-medium">Developer API</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">Build Custom Integrations</h2>
+            <h2 className="text-3xl md:text-4xl font-light text-white mb-4">Build Custom Integrations</h2>
             <p className="text-purple-200/60 max-w-lg mx-auto text-sm">
               Our comprehensive API lets you build custom integrations with any system your agency uses.
             </p>

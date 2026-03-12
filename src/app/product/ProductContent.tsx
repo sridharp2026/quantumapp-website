@@ -25,7 +25,7 @@ import {
   ProductProvider,
   ProductScheduling,
   ProductStreamLine,
-} from '@/assets/svg';
+} from "@/assets/svg";
 
 const features = [
   {
@@ -107,7 +107,7 @@ export default function ProductContent() {
       {/* ── Hero ── */}
       <section className="product-hero-bg flex items-center min-h-screen relative pt-24 pb-16 px-6 overflow-hidden">
         <MouseParticles />
-        <div className="max-w-6xl mx-auto relative">
+        <div className="max-w-7xl mx-auto relative">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Left text */}
             <motion.div
@@ -115,21 +115,26 @@ export default function ProductContent() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
             >
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[79px] [text-shadow:12px_13px_4px_rgba(0,0,0,0.29)] font-[300] leading-tight mb-4">
-                In Partnership
+              <div>
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[79px] [text-shadow:12px_13px_4px_rgba(0,0,0,0.29)] font-medium mb-4">
+                  In Partnership
+                </h1>
                 <div className="flex items-center gap-4 sm:gap-8">
-                  <span className="text-3xl sm:text-4xl md:text-5xl lg:text-[59px]">with </span>
+                  <span className="text-3xl my-8 sm:text-4xl md:text-5xl lg:text-[59px]">
+                    with{" "}
+                  </span>
                   <div className="w-[160px] sm:w-[220px] md:w-[280px] lg:w-[370px]">
                     <ProductGoviText width="100%" />
                   </div>
                 </div>
-              </h1>
-
-              <div className="mt-5 text-3xl sm:text-4xl md:text-5xl lg:text-[59px] font-[300]">
-                <span className="text-[#F59E0B]">AI</span>
-                <span className="">-Powered</span>
+                <div className="text-3xl sm:text-4xl md:text-5xl lg:text-[59px] font-medium">
+                  <span className="text-[#F59E0B]">AI</span>
+                  <span>-Powered</span>
+                </div>
+                <p className="mt-5 text-xl sm:text-2xl md:text-[28px] font-medium">
+                  Court Operations
+                </p>
               </div>
-              <p className="text-xl sm:text-2xl md:text-[28px] font-[300]">Court Operations</p>
             </motion.div>
 
             {/* Right illustration */}
@@ -159,10 +164,10 @@ export default function ProductContent() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-[20px] leading-relaxed max-w-2xl"
+            className="text-xl leading-relaxed max-w-2xl"
           >
             QuantumApps.AI and GovAI built{" "}
-            <span className="font-medium">Court Calendar</span>, a system that
+            <span className="font-bold">Court Calendar</span>, a system that
             transforms judicial operations by automating scheduling and input
             tasks with precision and contextual intelligence.
           </motion.p>
@@ -181,16 +186,19 @@ export default function ProductContent() {
               transition={{ duration: 0.7 }}
               className="flex flex-col sm:flex-row items-start sm:items-end gap-8 sm:gap-20"
             >
-              <div className="w-full sm:w-auto flex justify-center sm:justify-start"><ProductCourtCalender /></div>
+              <div className="w-full sm:w-auto flex justify-center sm:justify-start">
+                <ProductCourtCalender />
+              </div>
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="text-2xl sm:text-3xl md:text-[36px] font-[300] mb-0 sm:mb-8 leading-snug"
+                className="text-2xl sm:text-3xl md:text-4xl font-medium mb-0 sm:mb-8 leading-snug"
               >
+                <div className="mb-2">
                 Court Calendar leverages
-                <br />
-                <span className="text-purple-300">QuantumApps.AI</span> to:
+                </div>
+                <span className="font-bold text-purple-300">QuantumApps.AI</span> to:
               </motion.h2>
             </motion.div>
 
@@ -233,11 +241,11 @@ export default function ProductContent() {
                 viewport={{ once: true }}
                 className="flex flex-col sm:flex-row items-start sm:items-end gap-8 sm:gap-20 mb-10 sm:mb-20"
               >
-                <div className="text-xl sm:text-[32px]">
-                  <h2 className="text-3xl sm:text-[42px] font-[300] leading-tight">
+                <div className="text-xl sm:text-4xl">
+                  <h2 className="text-3xl sm:text-6xl font-semibold ">
                     Impact
                   </h2>
-                  <p className="mt-1">With Court Calendar, courts can:</p>
+                  <p className="mt-5">With Court Calendar, courts can:</p>
                 </div>
                 <motion.div
                   initial={{ opacity: 0, x: 30 }}
@@ -289,7 +297,7 @@ export default function ProductContent() {
                       )}
                     </div>
                     <p
-                      className={`leading-relaxed font-[300] p-8 sm:p-12 lg:p-16 text-black`}
+                      className={`leading-relaxed font-medium p-8 sm:p-12 lg:p-16 text-black`}
                     >
                       {description}
                     </p>
@@ -309,7 +317,9 @@ export default function ProductContent() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <p className="text-right text-[#F8C557] font-[300] text-2xl sm:text-3xl md:text-[42px]">Result</p>
+            <h3 className="text-right text-[#F8C557] font-medium mb-3 text-2xl sm:text-3xl md:text-5xl">
+              Result
+            </h3>
             <p className="text-right text-[#D8D8D8] max-w-3xl ml-auto text-[18px] leading-relaxed">
               Judicial staff can focus on meaningful work, while the AI handles
               repetitive, precise, and context-sensitive tasks — making court
@@ -322,130 +332,130 @@ export default function ProductContent() {
       {/* ── Dashboard Mockup ── */}
       <section className="py-14 px-6">
         <div className="max-w-4xl mx-auto">
-          
-        
           <div className="rounded-[28px] p-[6px] bg-[linear-gradient(90deg,#7F25D1_-34.01%,#F5835F_47.71%,#FECF08_127.88%),linear-gradient(93deg,#FECF08_-19.92%,#F5835F_49.16%,#7F25D1_116.27%),linear-gradient(106deg,#E9B341_1.35%,#610CAD_102.79%)]">
             <div className="bg-[#2D0878] border border-purple-500 rounded-3xl overflow-hidden shadow-[0_30px_80px_rgba(120,50,220)] backdrop-blur-sm">
-             
-             
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="rounded-2xl overflow-hidden border border-purple-500/30 shadow-2xl shadow-purple-900/40"
-          >
-            {/* Browser chrome */}
-            <div className="bg-[#1e0050] border-b border-purple-500/20 px-4 py-3 flex items-center gap-2">
-              <div className="flex gap-1.5">
-                <span className="w-3 h-3 rounded-full bg-red-500/70" />
-                <span className="w-3 h-3 rounded-full bg-yellow-400/70" />
-                <span className="w-3 h-3 rounded-full bg-green-500/70" />
-              </div>
-              <div className="flex-1 mx-4">
-                <div className="bg-purple-900/40 rounded-md px-3 py-1 text-purple-300/50 text-xs font-mono truncate">
-                  courtcalendar.quantumapps.ai/dashboard
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7 }}
+                className="rounded-2xl overflow-hidden border border-purple-500/30 shadow-2xl shadow-purple-900/40"
+              >
+                {/* Browser chrome */}
+                <div className="bg-[#1e0050] border-b border-purple-500/20 px-4 py-3 flex items-center gap-2">
+                  <div className="flex gap-1.5">
+                    <span className="w-3 h-3 rounded-full bg-red-500/70" />
+                    <span className="w-3 h-3 rounded-full bg-yellow-400/70" />
+                    <span className="w-3 h-3 rounded-full bg-green-500/70" />
+                  </div>
+                  <div className="flex-1 mx-4">
+                    <div className="bg-purple-900/40 rounded-md px-3 py-1 text-purple-300/50 text-xs font-mono truncate">
+                      courtcalendar.quantumapps.ai/dashboard
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2 text-purple-300/50">
+                    <Bell size={13} />
+                    <Settings size={13} />
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-center gap-2 text-purple-300/50">
-                <Bell size={13} />
-                <Settings size={13} />
-              </div>
-            </div>
 
-            {/* Dashboard body */}
-            <div className="bg-[#0f0028] p-5">
-              {/* Top nav */}
-              <div className="flex items-center gap-3 mb-5 pb-3 border-b border-purple-800/40">
-                <div className="flex flex-wrap gap-1.5">
-                  {[
-                    "Dashboard",
-                    "Entry Types",
-                    "Mapping Type",
-                    "Judges",
-                    "Documents",
-                  ].map((t) => (
-                    <span
-                      key={t}
-                      className={`text-[10px] px-2.5 py-1 rounded-full font-medium ${
-                        t === "Dashboard"
-                          ? "bg-[#F59E0B] text-black"
-                          : "text-purple-300/50"
-                      }`}
-                    >
-                      {t}
-                    </span>
-                  ))}
-                </div>
-                <div className="ml-auto flex items-center gap-2">
-                  <Users size={12} className="text-purple-400/60" />
-                  <span className="text-purple-300/50 text-[10px]">Admin</span>
-                </div>
-              </div>
+                {/* Dashboard body */}
+                <div className="bg-[#0f0028] p-5">
+                  {/* Top nav */}
+                  <div className="flex items-center gap-3 mb-5 pb-3 border-b border-purple-800/40">
+                    <div className="flex flex-wrap gap-1.5">
+                      {[
+                        "Dashboard",
+                        "Entry Types",
+                        "Mapping Type",
+                        "Judges",
+                        "Documents",
+                      ].map((t) => (
+                        <span
+                          key={t}
+                          className={`text-[10px] px-2.5 py-1 rounded-full font-medium ${
+                            t === "Dashboard"
+                              ? "bg-[#F59E0B] text-black"
+                              : "text-purple-300/50"
+                          }`}
+                        >
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="ml-auto flex items-center gap-2">
+                      <Users size={12} className="text-purple-400/60" />
+                      <span className="text-purple-300/50 text-[10px]">
+                        Admin
+                      </span>
+                    </div>
+                  </div>
 
-              <p className="text-white font-bold text-sm mb-4 flex items-center gap-2">
-                <Calendar size={14} className="text-[#F59E0B]" />
-                Admin Dashboard
-              </p>
+                  <p className="text-white font-bold text-sm mb-4 flex items-center gap-2">
+                    <Calendar size={14} className="text-[#F59E0B]" />
+                    Admin Dashboard
+                  </p>
 
-              {/* Filter row */}
-              <div className="flex flex-wrap gap-2 mb-5">
-                {[
-                  "Project",
-                  "Group",
-                  "Status",
-                  "Groups",
-                  "Email Template",
-                  "Rule Management",
-                ].map((f) => (
-                  <span
-                    key={f}
-                    className="bg-purple-900/40 border border-purple-700/30 text-purple-300/60 text-[9px] px-2 py-0.5 rounded-md whitespace-nowrap"
-                  >
-                    {f}
-                  </span>
-                ))}
-              </div>
-
-              {/* Stat grids */}
-              <div className="space-y-3">
-                {dashStats.map((row, ri) => (
-                  <div key={ri} className="grid grid-cols-3 sm:grid-cols-6 gap-2">
-                    {row.map(({ label, val }, ci) => (
-                      <div
-                        key={ci}
-                        className="bg-purple-900/30 border border-purple-700/25 rounded-xl p-2.5 flex flex-col items-center gap-1"
+                  {/* Filter row */}
+                  <div className="flex flex-wrap gap-2 mb-5">
+                    {[
+                      "Project",
+                      "Group",
+                      "Status",
+                      "Groups",
+                      "Email Template",
+                      "Rule Management",
+                    ].map((f) => (
+                      <span
+                        key={f}
+                        className="bg-purple-900/40 border border-purple-700/30 text-purple-300/60 text-[9px] px-2 py-0.5 rounded-md whitespace-nowrap"
                       >
-                        <span className="text-white font-bold text-base">
-                          {val}
-                        </span>
-                        <span className="text-purple-300/50 text-[8px] text-center leading-tight">
-                          {label}
-                        </span>
-                        <div className="mt-1 w-5 h-5 rounded-full bg-gradient-to-br from-[#F59E0B]/60 to-orange-600/40 flex items-center justify-center">
-                          <FileText size={9} className="text-white/70" />
-                        </div>
+                        {f}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* Stat grids */}
+                  <div className="space-y-3">
+                    {dashStats.map((row, ri) => (
+                      <div
+                        key={ri}
+                        className="grid grid-cols-3 sm:grid-cols-6 gap-2"
+                      >
+                        {row.map(({ label, val }, ci) => (
+                          <div
+                            key={ci}
+                            className="bg-purple-900/30 border border-purple-700/25 rounded-xl p-2.5 flex flex-col items-center gap-1"
+                          >
+                            <span className="text-white font-bold text-base">
+                              {val}
+                            </span>
+                            <span className="text-purple-300/50 text-[8px] text-center ">
+                              {label}
+                            </span>
+                            <div className="mt-1 w-5 h-5 rounded-full bg-gradient-to-br from-[#F59E0B]/60 to-orange-600/40 flex items-center justify-center">
+                              <FileText size={9} className="text-white/70" />
+                            </div>
+                          </div>
+                        ))}
                       </div>
                     ))}
                   </div>
-                ))}
-              </div>
+                </div>
+              </motion.div>
             </div>
-          </motion.div>
-        </div>
-        </div>
-             </div>
-             
-
-          {/* Dot navigation */}
-          <div className="flex justify-center gap-2 mt-6">
-            {[true, false, false].map((active, i) => (
-              <span
-                key={i}
-                className={`rounded-full transition-all ${active ? "w-6 h-2.5 bg-[#F59E0B]" : "w-2.5 h-2.5 bg-purple-700/50"}`}
-              />
-            ))}
           </div>
+        </div>
+
+        {/* Dot navigation */}
+        <div className="flex justify-center gap-2 mt-6">
+          {[true, false, false].map((active, i) => (
+            <span
+              key={i}
+              className={`rounded-full transition-all ${active ? "w-6 h-2.5 bg-[#F59E0B]" : "w-2.5 h-2.5 bg-purple-700/50"}`}
+            />
+          ))}
+        </div>
       </section>
 
       {/* ── CTA ── */}
@@ -457,9 +467,8 @@ export default function ProductContent() {
         >
           <Link
             href="/contact"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-[#F59E0B] to-orange-500 text-black px-14 py-4 rounded-full text-base transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(245,158,11,0.6)]"
-
-          > 
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-[#F59E0B] to-orange-500 text-black px-14 py-4 rounded-full text-base transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(245,158,11,0.6)]"
+          >
             Request Demo
           </Link>
         </motion.div>

@@ -10,7 +10,7 @@ interface ButtonProps extends HTMLMotionProps<'button'> {
 
 const VARIANT_CLASSES: Record<Variant, string> = {
   orange:
-    'bg-[#F59E0B] hover:bg-[#D97706] text-black font-[300] px-8 py-3.5 rounded-full',
+    'bg-[#F59E0B] hover:bg-[#D97706] text-black font-medium px-8 py-3.5 rounded-full',
   'outline-orange':
     'border-2 border-[#F59E0B] text-[#F59E0B] hover:bg-[#F59E0B]/10 px-8 py-3.5 rounded-full',
   'outline-purple':

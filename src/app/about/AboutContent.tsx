@@ -4,7 +4,9 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Phone, Send, CheckCircle } from "lucide-react";
 import {
+  AboutEmail,
   AboutHero,
+  AboutLinkedIn,
   AboutMission,
   AboutValue,
   AboutVision,
@@ -71,7 +73,7 @@ export default function AboutContent() {
           initial={{ opacity: 0, y: 32 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="text-5xl sm:text-6xl md:text-7xl font-[300] tracking-tight text-center mb-20"
+          className="text-5xl sm:text-6xl md:text-7xl font-medium  text-center mb-20"
         >
           About
         </motion.h1>
@@ -85,7 +87,7 @@ export default function AboutContent() {
           >
             {/* Text */}
             <motion.div variants={fadeUp}>
-              <h2 className="text-3xl md:text-6xl font-[300] text-white mb-5 leading-tight">
+              <h2 className="text-3xl md:text-6xl font-medium text-white mb-5 ">
                 Our Mission
               </h2>
               <p className="text-base leading-relaxed">
@@ -132,7 +134,7 @@ export default function AboutContent() {
 
             {/* Text — right on desktop */}
             <motion.div variants={fadeUp} className="order-1 lg:order-2">
-              <h2 className="text-3xl md:text-6xl font-[300] text-white mb-5 leading-tight">
+              <h2 className="text-3xl md:text-6xl font-medium text-white mb-5 ">
                 Our Vision
               </h2>
               <p className="text-base leading-relaxed">
@@ -163,7 +165,7 @@ export default function AboutContent() {
           >
             {/* Text */}
             <motion.div variants={fadeUp}>
-              <h2 className="text-3xl md:text-6xl font-[300] text-white mb-5 leading-tight">
+              <h2 className="text-3xl md:text-6xl font-medium text-white mb-5 ">
                 Our value
               </h2>
               <p className="text-base leading-relaxed">
@@ -208,7 +210,7 @@ export default function AboutContent() {
             <h2 className="text-4xl md:text-5xl font-medium text-[#3D0470] mb-3">
               Get in Touch
             </h2>
-            <p className="text-black font-[300] text-base max-w-xl mr-auto">
+            <p className="text-black font-medium text-base max-w-xl mr-auto">
               Whether you’re a developer with a question, a potential invester,
               or a future partner. we’d love to hear from you
             </p>
@@ -235,7 +237,7 @@ export default function AboutContent() {
                         className="text-green-600 mx-auto mb-5"
                       />
                     </motion.div>
-                    <h3 className="font-[300] text-3xl mb-2">
+                    <h3 className="font-medium text-3xl mb-2">
                       Message Received!
                     </h3>
                     <p className="text-white/75">
@@ -245,7 +247,7 @@ export default function AboutContent() {
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-4 mt-5">
                     <div>
-                      <label className="block text-[#3B1161] font-[300] mb-1.5 tracking-wide">
+                      <label className="block text-[#3B1161] font-medium mb-1.5 tracking-wide">
                         Full Name
                       </label>
                       <input
@@ -258,7 +260,7 @@ export default function AboutContent() {
                       />
                     </div>
                     <div>
-                      <label className="block text-[#3B1161] font-[300] mb-1.5 tracking-wide">
+                      <label className="block text-[#3B1161] font-medium mb-1.5 tracking-wide">
                         Email Address
                       </label>
                       <input
@@ -272,7 +274,7 @@ export default function AboutContent() {
                       />
                     </div>
                     <div>
-                      <label className="block text-[#3B1161] font-[300] mb-1.5 tracking-wide">
+                      <label className="block text-[#3B1161] font-medium mb-1.5 tracking-wide">
                         I am a...
                       </label>
                       <input
@@ -285,7 +287,7 @@ export default function AboutContent() {
                       />
                     </div>
                     <div>
-                      <label className="block text-[#3B1161] font-[300] mb-1.5 tracking-wide">
+                      <label className="block text-[#3B1161] font-medium mb-1.5 tracking-wide">
                         Message
                       </label>
                       <textarea
@@ -303,7 +305,7 @@ export default function AboutContent() {
                       disabled={loading}
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.97 }}
-                  className="w-full flex items-center justify-center gap-2 bg-[#F59E0B] hover:bg-[#D97706] text-black font-[300] px-6 py-3 rounded-full text-md transition-colors shadow-lg shadow-orange-900/30"
+                  className="w-full flex items-center justify-center gap-2 bg-[#F59E0B] hover:bg-[#D97706] text-black font-medium px-6 py-3 rounded-full text-md transition-colors shadow-lg shadow-orange-900/30"
                     >
                       {loading ? (
                         <span className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" />
@@ -329,7 +331,7 @@ export default function AboutContent() {
               }}
               className=""
             >
-              <h3 className="text-[32px] font-[300] text-[#280646]">
+              <h3 className="text-[32px] font-medium text-[#280646]">
                 Other Ways to connect
               </h3>
               <p className="text-[#280646] mb-6">
@@ -338,32 +340,32 @@ export default function AboutContent() {
               </p>
               <div className="space-y-5 mb-10">
                 <div className="flex items-center w-full max-w-[350px] gap-4 pl-6 bg-[#431396] rounded-[50px] p-2">
-                  <Mail size={17} className="text-[#F59E0B]" />
+                  <AboutEmail />
                   <div>
                     <p className="text-[#F6D388]">Email</p>
                     <a
                       href="mailto:hello@quantumapps.ai"
-                      className="text-[#F6D388] font-medium hover:text-[#F59E0B] transition-colors"
+                      className="text-[#F6D388] font-bold hover:text-[#F59E0B] transition-colors"
                     >
                       hello@quantumapps.com
                     </a>
                   </div>
                 </div>
                 <div className="inline-flex items-center w-full max-w-[350px] gap-4 px-6 bg-[#431396] rounded-[50px] p-2">
-                  <Phone size={17} className="text-[#F59E0B]" />
+                  <AboutLinkedIn />
                   <div>
                     <p className="text-[#F6D388]">Follow on Linkedin</p>
                     <a
                       href="#"
-                      className="text-[#F6D388] font-medium hover:text-[#F59E0B] transition-colors"
+                      className="text-[#F6D388] font-bold hover:text-[#F59E0B] transition-colors"
                     >
                       /quantumapps.ai
                     </a>
                   </div>
                 </div>
                 <div className="w-full max-w-[350px] bg-gradient-to-l from-red-400/50 via-red-400/50 to-yellow-400/50 rounded-[20px] p-6 shadow-lg shadow-orange-900/30">
-                  <h3 className="text-[#3D0470] text-[26px] font-[300]">Join our Beta</h3>
-                  <p className="text-[#3D0470] font-[300] my-3">
+                  <h3 className="text-[#3D0470] text-[26px] font-medium">Join our Beta</h3>
+                  <p className="text-[#3D0470] font-medium my-3">
                     Get early access to QuantumApps.AI and be part of shaping
                     the future of AI-powered development.
                   </p>
@@ -372,7 +374,7 @@ export default function AboutContent() {
                   href="/contact"
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
-                  className="inline-flex items-center gap-2 bg-[#F59E0B] hover:bg-[#D97706] text-black font-[300] px-6 py-3 rounded-full text-md transition-colors shadow-lg shadow-orange-900/30"
+                  className="inline-flex items-center gap-2 bg-[#F59E0B] hover:bg-[#D97706] text-black font-medium px-6 py-3 rounded-full text-md transition-colors shadow-lg shadow-orange-900/30"
                 >
                   Limited Spots Available
                 </motion.a>

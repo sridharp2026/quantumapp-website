@@ -43,10 +43,10 @@ export default function Solution() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.15 }}
           >
-            <h2 className="text-3xl md:text-5xl font-medium text-white leading-tight">
+            <h2 className="text-3xl md:text-5xl font-semibold text-white mb-3">
               QuantumApps.AI
             </h2>
-            <h2 className="text-2xl md:text-[34px] font-[300] text-white leading-tight">
+            <h2 className="text-2xl md:text-[34px] text-white ">
               Solution
             </h2>
           </motion.div>
@@ -70,8 +70,8 @@ export default function Solution() {
                 <Icon size={36} className="text-white" />
               </div>
               <div className="px-4 sm:px-8 py-4 sm:py-6 max-w-md">
-                <h3 className="text-[#3D076C] text-lg md:text-[22px] font-medium mb-3">{title}</h3>
-                <p className="text-[#000000] text-sm sm:text-base leading-relaxed">
+                <h3 className="text-[#3D076C] text-lg md:text-[22px] font-bold mb-3">{title}</h3>
+                <p className="text-[#000000] font-medium text-sm sm:text-base">
                   {description}
                 </p>
               </div>
