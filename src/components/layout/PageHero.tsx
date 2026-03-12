@@ -40,7 +40,7 @@ export default function PageHero({ eyebrow, title, highlight, subtitle }: PageHe
           initial={{ opacity: 0, y: 32 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-          className="text-4xl sm:text-5xl md:text-6xl font-light text-white leading-[1.1]  mb-6"
+          className="text-4xl sm:text-5xl md:text-6xl font-semibold text-white leading-[1.1]  mb-6"
         >
           {parts ? (
             <>
@@ -60,7 +60,7 @@ export default function PageHero({ eyebrow, title, highlight, subtitle }: PageHe
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.25 }}
-            className="text-purple-200/65 text-base md:text-lg max-w-2xl mx-auto leading-relaxed"
+            className="text-white/75 text-base md:text-lg max-w-2xl mx-auto leading-relaxed"
           >
             {subtitle}
           </motion.p>

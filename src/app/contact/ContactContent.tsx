@@ -84,28 +84,28 @@ export default function ContactContent() {
                   <form onSubmit={handleSubmit} className="space-y-4">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
-                        <label className="block text-white/70 text-xs mb-1.5">Full Name *</label>
+                        <label className="block text-white/75 text-xs mb-1.5">Full Name *</label>
                         <input name="name" value={form.name} onChange={handleChange} required placeholder="Jane Smith" className={inputClass} />
                       </div>
                       <div>
-                        <label className="block text-white/70 text-xs mb-1.5">Work Email *</label>
+                        <label className="block text-white/75 text-xs mb-1.5">Work Email *</label>
                         <input name="email" type="email" value={form.email} onChange={handleChange} required placeholder="jane@agency.gov" className={inputClass} />
                       </div>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
-                        <label className="block text-white/70 text-xs mb-1.5">Agency / Organization *</label>
+                        <label className="block text-white/75 text-xs mb-1.5">Agency / Organization *</label>
                         <input name="agency" value={form.agency} onChange={handleChange} required placeholder="Dept. of Homeland Security" className={inputClass} />
                       </div>
                       <div>
-                        <label className="block text-white/70 text-xs mb-1.5">Phone</label>
+                        <label className="block text-white/75 text-xs mb-1.5">Phone</label>
                         <input name="phone" type="tel" value={form.phone} onChange={handleChange} placeholder="+1 (555) 000-0000" className={inputClass} />
                       </div>
                     </div>
 
                     <div>
-                      <label className="block text-white/70 text-xs mb-1.5">How can we help? *</label>
+                      <label className="block text-white/75 text-xs mb-1.5">How can we help? *</label>
                       <textarea name="message" value={form.message} onChange={handleChange} required rows={5} placeholder="Tell us about your agency's challenges..." className={inputClass + ' resize-none'} />
                     </div>
 
@@ -133,7 +133,7 @@ export default function ContactContent() {
                       <Icon size={17} className="text-white" />
                     </div>
                     <div>
-                      <p className="text-purple-300/55 text-xs font-medium">{label}</p>
+                      <p className="text-white/75 text-xs font-medium">{label}</p>
                       {href ? (
                         <a href={href} className="text-white text-sm font-semibold hover:text-[#F59E0B] transition-colors">{value}</a>
                       ) : (

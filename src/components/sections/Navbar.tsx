@@ -6,8 +6,8 @@ import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { NAV_LINKS } from "@/lib/data";
-import { QuantumAppsLogo } from '@/assets/svg';
-import Button from '@/components/ui/Button';
+import { QuantumAppsLogo } from "@/assets/svg";
+import Button from "@/components/ui/Button";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -129,9 +129,10 @@ export default function Navbar() {
               <div className="pt-3">
                 <Link
                   href="/contact"
-                  className="block w-full text-center bg-gradient-to-r from-yellow-400 to-orange-400 text-black px-5 py-3 rounded-full text-sm"
+                  className="flex items-center justify-center gap-2 w-full md:w-auto text-center bg-gradient-to-r from-yellow-400 to-orange-400 text-black px-4 md:px-6 py-3 rounded-full text-sm"
                 >
-                  Get Early Access <ArrowRight size={15} />
+                  <span>Get Early Access</span>
+                  <ArrowRight size={15} />
                 </Link>
               </div>
             </div>
