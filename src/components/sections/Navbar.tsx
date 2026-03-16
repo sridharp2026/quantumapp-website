@@ -70,7 +70,7 @@ export default function Navbar() {
           <div className="hidden md:block">
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.96 }}>
               <Link
-                href="/contact"
+                href="/get-early-access"
                 className="btn-orange-glow flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-black px-5 py-2 rounded-full transition-colors duration-200"
               >
                 Get Early Access <ArrowRight size={15} />
@@ -128,7 +128,7 @@ export default function Navbar() {
               ))}
               <div className="pt-3">
                 <Link
-                  href="/contact"
+                  href="/get-early-access"
                   className="flex items-center justify-center gap-2 w-full md:w-auto text-center bg-gradient-to-r from-yellow-400 to-orange-400 text-black px-4 md:px-6 py-3 rounded-full text-sm"
                 >
                   <span>Get Early Access</span>

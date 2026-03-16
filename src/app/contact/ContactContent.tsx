@@ -4,12 +4,10 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Mail, Phone, MapPin, Calendar, Send, CheckCircle } from 'lucide-react'
 import PageHero from '@/components/layout/PageHero'
-
 const contactInfo = [
-  { Icon: Mail, label: 'Email', value: 'admin@quantumapps.ai', href: 'mailto:admin@quantumapps.ai' },
-  { Icon: Phone, label: 'Phone', value: '+1 (202) 555-0147', href: 'tel:+12025550147' },
-  { Icon: MapPin, label: 'Headquarters', value: 'Washington, DC', href: null },
-  { Icon: Calendar, label: 'Schedule a Demo', value: 'Book a 30-min call', href: '#' },
+  { Icon: Mail, label: 'Email', value: 'solutions@quantumapps.ai', href: 'mailto:solutions@quantumapps.ai' },
+  { Icon: Phone, label: 'Phone', value: '+1 (717) 690-0472', href: 'tel:+17176900472' },
+  { Icon: MapPin, label: 'Headquarters', value: <>3800 Market Street, Suite 204<br />Camp Hill, PA 17011</>, href: null },
 ]
 
 const fadeUp = {
@@ -100,7 +98,7 @@ export default function ContactContent() {
                       </div>
                       <div>
                         <label className="block text-white/75 text-xs mb-1.5">Phone</label>
-                        <input name="phone" type="tel" value={form.phone} onChange={handleChange} placeholder="+1 (555) 000-0000" className={inputClass} />
+                        <input name="phone" type="tel" value={form.phone} onChange={handleChange} placeholder="+1 (717) 000-0000" className={inputClass} />
                       </div>
                     </div>
 
@@ -157,7 +155,7 @@ export default function ContactContent() {
                   See QuantumApps.AI in action with a personalized 30-minute walkthrough tailored to your agency&apos;s workflows.
                 </p>
                 <motion.a
-                  href="#"
+                  href="/get-early-access"
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
                   className="inline-flex items-center gap-2 bg-[#F59E0B] hover:bg-[#D97706] text-black px-6 py-3 rounded-full text-sm transition-colors shadow-lg shadow-orange-600/25"

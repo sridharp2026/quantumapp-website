@@ -27,7 +27,7 @@ export default function Footer() {
   return (
     <footer className="footer-bg border-t border-purple-800/25 mt-0">
       <div className="max-w-6xl mx-auto px-6 py-16">
-          <div className="grid grid-cols-1 md:grid-cols-[350px_1fr_1fr_1fr] gap-12 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-[450px_1fr_1fr] gap-12 mb-12">
           {/* Brand — spans 2 cols */}
           <div className="md:col-span-1 space-y-3">
             <Link href="/" className="inline-flex items-center gap-2">
@@ -75,8 +75,8 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Company */}
-          <div>
+          {/* Help */}
+          {/* <div>
             <h4 className="text-[#E9B341] font-medium mb-5 tracking-wide">
               HELP
             </h4>
@@ -92,7 +92,7 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Legal + CTA */}
           <div>
@@ -113,14 +113,15 @@ export default function Footer() {
       </div>
         {/* Bottom bar */}
         <div className="border-t border-purple-800/20 pt-8 text-center gap-3">
+
           <p className="text-white/65 text-base">
+          Copyright 
             &copy; {new Date().getFullYear()} <a
-              href="/"
+              href="http://quantamapps.ai/"
               className="text-white/80 hover:text-white transition-colors"
             >
-              QuantumApps.AI
-            </a>. All rights
-            reserved.
+              QuantumApps
+            </a>. All Rights Reserved.
           </p>
         </div>
       </div>

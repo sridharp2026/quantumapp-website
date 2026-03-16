@@ -466,7 +466,7 @@ export default function ProductContent() {
           viewport={{ once: true }}
         >
           <Link
-            href="/contact"
+            href="/get-early-access"
             className="inline-flex items-center gap-2 bg-gradient-to-r from-[#F59E0B] to-orange-500 text-black px-14 py-4 rounded-full text-base transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(245,158,11,0.6)]"
           >
             Request Demo

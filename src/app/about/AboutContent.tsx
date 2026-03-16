@@ -344,10 +344,10 @@ export default function AboutContent() {
                   <div>
                     <p className="text-[#F6D388]">Email</p>
                     <a
-                      href="mailto:hello@quantumapps.ai"
+                      href="mailto:solutions@quantumapps.ai"
                       className="text-[#F6D388] font-bold hover:text-[#F59E0B] transition-colors"
                     >
-                      hello@quantumapps.com
+                      solutions@quantumapps.com
                     </a>
                   </div>
                 </div>
@@ -371,7 +371,7 @@ export default function AboutContent() {
                   </p>
                   
                 <motion.a
-                  href="/contact"
+                  href="/get-early-access"
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
                   className="inline-flex items-center gap-2 bg-[#F59E0B] hover:bg-[#D97706] text-black font-medium px-6 py-3 rounded-full text-md transition-colors shadow-lg shadow-orange-900/30"

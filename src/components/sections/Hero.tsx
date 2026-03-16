@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Button from "@/components/ui/Button";
@@ -75,20 +76,15 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.68 }}
           className="flex flex-col sm:flex-row gap-4 mb-8"
         >
-          <Button
-            className="px-8 py-4 rounded-full !font-medium !text-[16px]
-            bg-gradient-to-r from-yellow-400 to-orange-400 !text-black
-            hover:scale-105 transition transform shadow-lg"
-          >
-            Get Early Access <ArrowRight size={15} />
-          </Button>
-          <Button
-            className="px-8 py-4 rounded-full !font-medium !text-[16px]
-            bg-white text-gray-800 !text-black
-            hover:scale-105 transition transform shadow-lg hover:bg-gradient-to-r from-yellow-400 to-orange-400"
-          >
-            Early Platform
-          </Button>
+          <Link href="/get-early-access">
+            <Button
+              className="px-8 py-4 rounded-full !font-medium !text-[16px]
+              bg-gradient-to-r from-yellow-400 to-orange-400 !text-black
+              hover:scale-105 transition transform shadow-lg"
+            >
+              Get Early Access <ArrowRight size={15} />
+            </Button>
+          </Link>
         </motion.div>
       </div>
     </section>

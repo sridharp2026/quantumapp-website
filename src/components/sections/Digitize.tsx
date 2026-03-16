@@ -140,7 +140,7 @@ export default function Digitize() {
           </div>
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -153,7 +153,7 @@ export default function Digitize() {
           <Button variant="orange" className="bg-[linear-gradient(90deg,#7F25D1_-34.01%,#F5835F_47.71%,#FECF08_127.88%)] px-10 py-4">
             Explore Platform <ChevronRight size={18} />
           </Button>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   )
